@@ -1,84 +1,99 @@
 <!DOCTYPE html>
 
 <html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+        <title id = "title">
+            AP Credit Checker
+        </title>
+        <meta content = "Find ">
+    </head>
+
     <body>
-        
-        <div id = "selection">
-            <div id = "left">
-                College
+        <div id = "content">
+            <header>
+                <h1 id = "headerTitle"> 
+                    AP Credit Checker
+                </h1>
                 
-                <select id="collegeSearchbar">
-                    <option value = "N/A"></option>
-                    <option value = "UF">University of Florida</option>
-                    <option value = "UCF">Universy of Central Florida</option>
-                </select>
-                
-            </div>
-            <div id = "right">
-                AP Exam
-                <select id="apExamSearchbar">
-                    <option value = "N/A"></option>
-                    <option value = "AP Biology">AP Biology</option>
-                    <option value = "AP Human Geography">AP Human Geography</option>
-                    <option value = "AP Calculus AB">AP Calculus AB</option> 
-                    <option value = "AP Art History">AP Art History</option>
-                    <option value = "AP Biology"> AP Biology</option>
-                    <option value = "AP Calculus AB">AP Calculus AB</option>
-                    <option value = "AP Calculus BC">AP Calculus BC</option>
-                    <option value = "AP Capstone Seminar">AP Capstone Seminar</option>
-                    <option value = "AP Capstone Research">AP Capstone Research</option>
-                    <option value = "AP Chemistry">AP Chemistry</option>
-                    <option value = "AP Chinese Language and Culture">AP Chinese Language and Culture</option>
-                    <option value = "AP Computer Science A">AP Computer Science A</option>
-                    <option value = "AP Computer Science AB">AP Computer Science AB</option>
-                    <option value = "AP Computer Science Principles">AP Computer Science Principles</option>
-                    <option value = "AP Economics: Macro">AP Economics: Macro</option>
-                    <option value = "AP Economics: Micro">AP Economics: Micro</option>
-                    <option value = "AP English Language">AP English Language</option>
-                    <option value = "AP English Literature">AP English Literature</option>
-                    <option value = "AP Environmental Science">AP Environmental Science</option>
-                    <option value = "AP European History">AP European History</option>
-                    <option value = "AP French Language and Culture"> AP French Language and Culture</option>
-                    <option value = "AP French Literature">AP French Literature</option>
-                    <option value = "AP German Language and Culture">AP German Language and Culture</option>
-                    <option value = "AP Government and Politics: Comparative">AP Government and Politics: Comparative</option>
-                    <option value = "AP Government and Politics: United States">AP Government and Politics: United States</option>
-                    <option value = "AP Human Geography">AP Human Geography</option>
-                    <option value = "AP Italian Language and Culture">AP Italian Language and Culture</option>
-                    <option value = "AP Japanese Language and Culture">AP Japanese Language and Culture</option>
-                    <option value = "AP Latin Literature">AP Latin Literature</option>
-                    <option value = "AP Latin">AP Latin</option> 
-                    <option value = "AP Music Theory">AP Music Theory</option>
-                    <option value = "AP Physics 1">AP Physics 1</option>
-                    <option value = "AP Physics 2">AP Physics 2</option>
-                    <option value = "AP Physics B">AP Physics B</option>
-                    <option value = "AP Physics C: Electricity and Magnetism">AP Physics C: Electricity and Magnetism</option>
-                    <option value = "AP Physics C: Mechanics">AP Physics C: Mechanics</option> 
-                    <option value = "AP Psychcology">AP Psychology</option>
-                    <option value = "AP Spanish Language and Culture">AP Spanish Language and Culture</option>
-                    <option value = "AP Spanish Literature">AP Spanish Literature</option> 
-                    <option value = "AP Statistics">AP Statistics</option>
-                    <option value = "AP Studio Art: Drawing">AP Studio Art: Drawing</option>
-                    <option value = "AP Studio Art: 2-D Design">AP Stuido Art: 2-D Design</option>
-                    <option value = "AP Studio Art: 3-D Design">AP Studio Art: 3-D Design</option>
-                    <option value = "AP United States History">AP United States History</option> 
-                    <option value = "AP World History">AP World History</option>
-                </select>
-                
-            </div>
-        </div> 
-        <div id = "main"> 
-            <div id = "tableTitle">
-                <div class = "box">Ap Exam</div>
-                <div class = "box">Score of 3</div>
-                <div class = "box">Score of 4</div> 
-                <div class = "box">Score of 5</div>
-            </div> 
-            <div id = "table">
-                <div id = "courseDescription">
-                    Course Descriptions:
+                <div id = "selection">
+                    <h2 id = "collegeSelection">
+                        College
+                        <select id="collegeSearchbar">
+                            <option value = "N/A"></option>
+                            <option value = "UF">University of Florida</option>
+                            <option value = "UCF">Universy of Central Florida</option>
+                        </select> 
+                    </h2>
+                    <h2 id = "apSelection">
+                        AP Exam
+                        <select id="apExamSearchbar">
+                            <option value = "N/A"></option>
+                            <option value = "AP Biology">AP Biology</option>
+                            <option value = "AP Human Geography">AP Human Geography</option>
+                            <option value = "AP Calculus AB">AP Calculus AB</option> 
+                            <option value = "AP Art History">AP Art History</option>
+                            <option value = "AP Biology"> AP Biology</option>
+                            <option value = "AP Calculus AB">AP Calculus AB</option>
+                            <option value = "AP Calculus BC">AP Calculus BC</option>
+                            <option value = "AP Capstone Seminar">AP Capstone Seminar</option>
+                            <option value = "AP Capstone Research">AP Capstone Research</option>
+                            <option value = "AP Chemistry">AP Chemistry</option>
+                            <option value = "AP Chinese Language and Culture">AP Chinese Language and Culture</option>
+                            <option value = "AP Computer Science A">AP Computer Science A</option>
+                            <option value = "AP Computer Science AB">AP Computer Science AB</option>
+                            <option value = "AP Computer Science Principles">AP Computer Science Principles</option>
+                            <option value = "AP Economics: Macro">AP Economics: Macro</option>
+                            <option value = "AP Economics: Micro">AP Economics: Micro</option>
+                            <option value = "AP English Language">AP English Language</option>
+                            <option value = "AP English Literature">AP English Literature</option>
+                            <option value = "AP Environmental Science">AP Environmental Science</option>
+                            <option value = "AP European History">AP European History</option>
+                            <option value = "AP French Language and Culture"> AP French Language and Culture</option>
+                            <option value = "AP French Literature">AP French Literature</option>
+                            <option value = "AP German Language and Culture">AP German Language and Culture</option>
+                            <option value = "AP Government and Politics: Comparative">AP Government and Politics: Comparative</option>
+                            <option value = "AP Government and Politics: United States">AP Government and Politics: United States</option>
+                            <option value = "AP Human Geography">AP Human Geography</option>
+                            <option value = "AP Italian Language and Culture">AP Italian Language and Culture</option>
+                            <option value = "AP Japanese Language and Culture">AP Japanese Language and Culture</option>
+                            <option value = "AP Latin Literature">AP Latin Literature</option>
+                            <option value = "AP Latin">AP Latin</option> 
+                            <option value = "AP Music Theory">AP Music Theory</option>
+                            <option value = "AP Physics 1">AP Physics 1</option>
+                            <option value = "AP Physics 2">AP Physics 2</option>
+                            <option value = "AP Physics B">AP Physics B</option>
+                            <option value = "AP Physics C: Electricity and Magnetism">AP Physics C: Electricity and Magnetism</option>
+                            <option value = "AP Physics C: Mechanics">AP Physics C: Mechanics</option> 
+                            <option value = "AP Psychcology">AP Psychology</option>
+                            <option value = "AP Spanish Language and Culture">AP Spanish Language and Culture</option>
+                            <option value = "AP Spanish Literature">AP Spanish Literature</option> 
+                            <option value = "AP Statistics">AP Statistics</option>
+                            <option value = "AP Studio Art: Drawing">AP Studio Art: Drawing</option>
+                            <option value = "AP Studio Art: 2-D Design">AP Stuido Art: 2-D Design</option>
+                            <option value = "AP Studio Art: 3-D Design">AP Studio Art: 3-D Design</option>
+                            <option value = "AP United States History">AP United States History</option> 
+                            <option value = "AP World History">AP World History</option>
+                        </select>
+                    </h2>
+                    <div>*Click on course to view description!</div>
                 </div>
-            </div>            
+            </header>
+            
+            <div id = "main"> 
+                
+                <div id = "tableTitle">
+                    <h3 class = "box">Ap Exam</h3>
+                    <h3 class = "box">Score of 3</h3>
+                    <h3 class = "box">Score of 4</h3> 
+                    <h3 class = "box">Score of 5</h3>
+                </div> 
+                <div id = "table">
+                </div>            
+            </div>
         </div>
        
     </body>

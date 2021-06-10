@@ -1,63 +1,161 @@
+
 body{
+    display: flex;
+    justify-content: center;
     margin: 0px;
-    padding: 15px;
+    padding: 0px; 
+    font-family: "Roboto";
+    font-size: 25px;
+    background-size: 100%;
+    background-image: url("https://i.redd.it/92p34mtzd3y41.png");
+    animation: fadeInHome 1s;
+}
+
+html{
+    height: 100%;
+}
+
+
+h1, h2{
+    font-family: "Gothic A1";
+}
+
+
+#content{
+    justify-content: center;
+    background-color: white;
+    height: 100%;
+    width: 60%;
+    margin: 0px;
+    opacity: 90%;
+    animation: fadeInDown .25s
+}
+
+header{
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+}
+
+#headerTitle{
+    font-size: 50px;
+    margin: 0px;
+    padding: 15px 0px 15px 0px;
+    border-bottom: 2px solid black;
+    width: 100%;
+    text-align: center;
 }
 
 #selection{
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 10px;
-    
+    font-size: 30px;
+    padding-top: 15px;
 }
 
-#left{
-    display: grid;
-    
+#collegeSelection{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+    margin: 0px;
 }
 
-#right{
-    display: grid;
+#collegeSearchbar{
+    width: 400px;
+    height: 40px;
+    background-color: lightgray;
+    margin: 10px;
+    font-family: "Roboto";
+    font-size: 25px;
+    border: solid grey 2px;
+}
+
+#apSelection{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+    margin: 0px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+#apExamSearchbar{
+    width: 400px;
+    height: 40px;
+    background-color: lightgrey;
+    margin: 10px;
+    font-family: "Roboto";
+    font-size: 25px;
+    border: solid grey 2px;
     
 }
 
 #main{
     display: grid;
-    margin: 10px;
-    margin-top: 30px;
+    height: 100%;
+    margin: 30px;
+    border: 1px solid black;
+    z-index: 0;
 }
 
 #tableTitle{
     display: grid;
-    height: 50px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    
 }
 
 #table{
     display: grid;
-    height: 0px;
+    height: 100%;
     width: 100%; 
 }
 
 .row{
     display: grid;
-    height: 50px;
+    height: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .box{
-    border: 1px solid lightgray;
+    border: 1px solid black;
     padding: 5px;
+    font-size: 25px;
+    margin: 0px;
+}
+
+
+.pointer{
+    cursor: pointer;
+}
+
+.pointer:hover{
+    color:blue;
 }
 
 #courseDescription{
-    height: 375px;
-    width: 700px;
     margin-top: 20px;
     padding: 10px;
     justify-self: center;
     border: solid lightgrey;
+    font-family: "Roboto";
+    font-size: 25px;    
+    border: 2px solid black;
 }
 
 
+@keyframes fadeInHome{
+    from{
+        opacity: 0;
+        background-size: 90%;
+        background-position-x: 50%;
+    }
+
+    to{
+        opacity: 1;
+        background-size: 100%;
+    }
+}
