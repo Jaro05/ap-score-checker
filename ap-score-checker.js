@@ -459,17 +459,19 @@ function clearCourseDescription(){
 
 function createCourseDescription(){
     courseDescription.setAttribute("id","courseDescription");
+    document.querySelector("body").appendChild(courseDescription);
     courseDescription.style.height = "auto";
     courseDescription.style.width = "800px";
     courseDescription.style.border = "2px solid black";
     clearCourseDescription();
-    document.querySelector("body").appendChild(courseDescription);
     courseDescription.style.position = "fixed"; 
     courseDescription.style.top = "-10px"
     courseDescription.style.zIndex = "2";
     courseDescription.style.backgroundColor = "lightgray";
     courseDescription.style.opacity = "100%";
     courseDescription.style.fontSize = "25px";
+    courseDescription.style.overflowY = "scroll";
+    courseDescription.style.maxHeight = "95%"
 
     
     exitBox.style.height = "25px";
