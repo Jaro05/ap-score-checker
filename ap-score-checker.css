@@ -1,6 +1,13 @@
 
+@font-face{
+    font-family: "Gothic A1";
+    src: url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+}
 
-
+@font-face{
+    font-family: "Roboto";
+    src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
 
 body{
     display: flex;
@@ -130,13 +137,17 @@ header{
     margin: 0px;
 }
 
+.boxCourses{
+    color: blue;
+}
 
 .pointer{
     cursor: pointer;
 }
 
 .pointer:hover{
-    color:blue;
+    color:rgb(0,0,150);
+    text-decoration: underline;
 }
 
 #courseDescription{
