@@ -1,0 +1,135 @@
+@font-face{
+    font-family: "Gothic A1";
+    src: url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+}
+
+@font-face{
+    font-family: "Roboto";
+    src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px; 
+    font-family: "Roboto";
+    font-size: 25px;
+    background-size: 100%;
+    background-image: url("https://i.redd.it/92p34mtzd3y41.png");
+    animation: fadeInHome 1s;
+}
+
+html{
+    height: 100%;
+}
+
+nav{
+    width: 100%;
+}
+
+#navList{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px;
+    margin: 10px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+h1, h2{
+    font-family: "Gothic A1";
+}
+
+
+#content{
+    justify-content: center;
+    background-color: white;
+    height: 100%;
+    width: 60%;
+    margin: 0px;
+    opacity: 90%;
+    animation: fadeInDown .25s
+}
+
+header{
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+}
+
+#headerTitle{
+    font-size: 50px;
+    margin: 0px;
+    padding: 15px 0px 15px 0px;
+    border-bottom: 2px solid black;
+    width: 100%;
+    text-align: center;
+}
+
+
+@keyframes fadeInHome{
+    from{
+        opacity: 0;
+        background-size: 90%;
+        background-position-x: 50%;
+    }
+
+    to{
+        opacity: 1;
+        background-size: 100%;
+    }
+}
+
+
+@media screen and (max-width: 1008px){
+    #content{
+        width: 85%;
+    }
+
+    #headerTitle{
+        font-size: 35px;
+    }
+
+    .box{
+        font-size: 12px;
+    }
+
+    #selection{
+        font-size: 20px;
+    }
+
+    #collegeSearchbar{
+        height: 30px;
+        font-size: 20px;
+        width: 90%;
+    }
+
+    #apExamSearchbar{
+        height: 30px;
+        font-size: 20px;
+        width: 90%;
+    }
+
+    #clickOnCourse{
+        text-align: center;
+    }
+    
+    #main{
+        margin: 10px;
+    }
+
+    #courseDescription{
+        font-size: 20px !important;
+        overflow-y: scroll !important;
+        max-height: 95% !important;
+        width: 300px !important;
+    }
+
+    #exitbox{
+        font-size: 100% !important;
+        height: 50px !important;
+        width: 50px !important;
+    }
+}
