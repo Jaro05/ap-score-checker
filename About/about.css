@@ -160,7 +160,7 @@ header{
     background-color: yellow;
     transform: rotateY(180deg);
     padding: 10px;
-    font-size: 22px;
+    font-size: 100%;
     overflow: hidden;
 }
 
