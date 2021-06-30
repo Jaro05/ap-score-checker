@@ -180,20 +180,16 @@ header{
 
 
 @media screen and (max-width: 1008px){
+    body{
+        height: auto;
+    }
+
     #content{
         width: 85%;
     }
 
     #headerTitle{
         font-size: 35px;
-    }
-
-    .box{
-        font-size: 12px;
-    }
-
-    #selection{
-        font-size: 20px;
     }
 
     #collegeSearchbar{
@@ -213,19 +209,81 @@ header{
     }
     
     #main{
+        height: 1000px;
         margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 10px 10px;
+        margin: 3% 3% 3% 3%;
     }
 
-    #courseDescription{
-        font-size: 20px !important;
-        overflow-y: scroll !important;
-        max-height: 95% !important;
-        width: 300px !important;
+    #boxOne{
+        border: black 2px solid;
+        transform-style: preserve-3d;
+        transition: all 0.5s ease;
+        background: yellow;
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+    
+    #boxOne:hover{
+        transform: rotateY(180deg);
+    }
+    
+    #boxTwo{
+        border: black 2px solid;
+        transform-style: preserve-3d;
+        transition: all 0.5s ease;
+        background: yellow;
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+    
+    #boxTwo:hover{
+        transform: rotateY(180deg);
+    }
+    
+    #boxThree{
+        border: black 2px solid;
+        transform-style: preserve-3d;
+        transition: all 0.5s ease;
+        background: yellow;
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+    
+    #boxThree:hover{
+        transform: rotateY(180deg);
+    }
+    
+    #boxFour{
+        border: black 2px solid;
+        transform-style: preserve-3d;
+        transition: all 0.5s ease;
+        background: yellow;
+        grid-column: 1/5;
+        grid-row: 4/5;
+    }
+    
+    #boxFour:hover{
+        transform: rotateY(180deg);
+    }
+    
+    #boxFive{
+        border: black 2px solid;
+        transform-style: preserve-3d;
+        transition: all 0.5s ease;
+        background: yellow;
+        grid-column: 1/5;
+        grid-row: 5/6;
+    }
+    
+    #boxFive:hover{
+        transform: rotateY(180deg);
     }
 
-    #exitbox{
-        font-size: 100% !important;
-        height: 50px !important;
-        width: 50px !important;
+    .theback{
+        font-size: 20px;
     }
 }
