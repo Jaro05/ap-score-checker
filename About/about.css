@@ -79,6 +79,7 @@ header{
 
 #boxOne{
     border: black 2px solid;
+    -webkit-backface-visibility: hidden;
     transform-style: preserve-3d;
     transition: all 0.5s ease;
     background: yellow;
@@ -91,6 +92,7 @@ header{
 
 #boxTwo{
     border: black 2px solid;
+    -webkit-backface-visibility: hidden;
     transform-style: preserve-3d;
     transition: all 0.5s ease;
     background: yellow;
@@ -103,6 +105,7 @@ header{
 
 #boxThree{
     border: black 2px solid;
+    -webkit-backface-visibility: hidden;
     transform-style: preserve-3d;
     transition: all 0.5s ease;
     background: yellow;
@@ -116,6 +119,7 @@ header{
 
 #boxFour{
     border: black 2px solid;
+    -webkit-backface-visibility: hidden;
     transform-style: preserve-3d;
     transition: all 0.5s ease;
     background: yellow;
@@ -128,6 +132,7 @@ header{
 
 #boxFive{
     border: black 2px solid;
+    -webkit-backface-visibility: hidden;
     transform-style: preserve-3d;
     transition: all 0.5s ease;
     background: yellow;
