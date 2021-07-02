@@ -79,6 +79,269 @@ header{
 
 #boxOne{
     border: black 2px solid;
+    background: yellow;
+    grid-column: 1/3;
+}
+
+#boxTwo{
+    border: black 2px solid;
+    background: yellow;
+    grid-column: 3/4;
+}
+
+#boxThree{
+    background: yellow;
+    border: black 2px solid;
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+#boxFour{
+    border: black 2px solid;
+    background: yellow;
+    grid-column: 1/2;
+}
+
+#boxFive{
+    border: black 2px solid;
+    background: yellow;
+    grid-column: 2/4;
+}
+
+.thefront{
+    background-color: lightgray;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: Gothic A1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.theback{
+    position: relative;
+    background-color: yellow;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+
+@keyframes fadeInHome{
+    from{
+        opacity: 0;
+        background-size: 90%;
+        background-position-x: 50%;
+    }
+
+    to{
+        opacity: 1;
+        background-size: 100%;
+    }
+}
+
+
+@media screen and (max-width: 1008px){
+    body{
+        height: auto;
+    }
+
+    #content{
+        width: 85%;
+    }
+
+    #headerTitle{
+        font-size: 35px;
+    }
+
+    #collegeSearchbar{
+        height: 30px;
+        font-size: 20px;
+        width: 90%;
+    }
+
+    #apExamSearchbar{
+        height: 30px;
+        font-size: 20px;
+        width: 90%;
+    }
+
+    #clickOnCourse{
+        text-align: center;
+    }
+    
+    #main{
+        height: 1000px;
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 10px 10px;
+        margin: 3% 3% 3% 3%;
+    }
+
+    #boxOne{
+        border: black 2px solid;
+        background: yellow;
+        grid-column: 1/5;
+    }
+    
+    #boxTwo{
+        border: black 2px solid;
+        background: yellow;
+        grid-column: 1/5;
+    }
+    
+    #boxThree{
+        background: yellow;
+        border: black 2px solid;
+        grid-column: 1/5;
+    }
+    
+    #boxFour{
+        border: black 2px solid;
+        background: yellow;
+        grid-column: 1/5;
+    }
+    
+    #boxFive{
+        border: black 2px solid;
+        background: yellow;
+        grid-column: 1/5;
+    }
+    
+    .thefront{
+        background-color: lightgray;
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        font-family: Gothic A1;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .theback{
+        position: relative;
+        background-color: yellow;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    li{
+        margin-left: 5px;
+        margin-right: 5px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+@font-face{
+    font-family: "Gothic A1";
+    src: url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+}
+
+@font-face{
+    font-family: "Roboto";
+    src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
+
+body{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px; 
+    font-family: "Roboto";
+    background-size: 100%;
+    background-image: url("https://i.redd.it/92p34mtzd3y41.png");
+    animation: fadeInHome 1s;
+}
+
+html{
+    height: 100%;
+}
+
+nav{
+    width: 100%;
+}
+
+#navList{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px;
+    margin: 10px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+h1, h2{
+    font-family: "Gothic A1";
+}
+
+
+#content{
+    justify-content: center;
+    background-color: white;
+    height: 100%;
+    width: 60%;
+    margin: 0px;
+    opacity: 90%;
+    animation: fadeInDown .25s
+}
+
+header{
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+}
+
+#headerTitle{
+    font-size: 50px;
+    margin: 0px;
+    padding: 15px 0px 15px 0px;
+    border-bottom: 2px solid black;
+    width: 100%;
+    text-align: center;
+}
+
+#main{
+    height: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px 10px;
+    margin: 3% 3% 3% 3%;
+}
+
+#boxOne{
+    border: black 2px solid;
     transform-style: preserve-3d;
     transition: all 0.5s ease;
     background: yellow;
@@ -231,6 +494,7 @@ header{
         -webkit-transform: rotateY(180deg);
     }
     
+
     #boxTwo{
         border: black 2px solid;
         transform-style: preserve-3d;
@@ -287,3 +551,4 @@ header{
         font-size: 20px;
     }
 }
+/*

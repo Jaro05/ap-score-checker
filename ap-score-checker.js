@@ -963,7 +963,7 @@ let UACourses =
     ["AP Physics C: Electricity and Magnetism","PH 106 General Physics W/Calc II","PH 106 General Physics W/Calc II","PH 106 General Physics W/Calc II"],
     ["Ap Physics C: Mechanics","PH 105 General Physics W/Calc I","PH 105 General Physics W/Calc I","PH 105 General Physics W/Calc I"],
     ["AP Psychcology","PY 101 Intro To Psychology","PY 101 Intro To Psychology","PY 101 Intro To Psychology"],
-    ["AP Spanish Language and Culture","SP 102","SP 102/SP 201","SP 102/SP 201/SP 202"],
+    ["AP Spanish Language and Culture","SP 102","SP 102 | SP 201","SP 102 | SP 201 | SP 202"],
     ["AP Spanish Literature","SP 102 Introductory Spanish II","SP 102 Introductory Spanish II | SP 201 Intermediate Spanish","SP 102 Introductory Spanish II | SP 201 Intermediate Spanish | SP 202 Intermediate Spanish"],
     ["AP Statistics","ST 260 Statistical Data Analysis","ST 260 Statistical Data Analysis","ST 260 Statistical Data Analysis"],
     ["AP Studio Art: Drawing","N/A","ART 110 Drawing I","ART 110 Drawing I"],
@@ -1019,6 +1019,97 @@ let UADescriptions =
     ["AP World History","N/A","This course examines the political, economic, religious and social history of the world from the first civilizations that emerged around 3000 BC to about the year AD 1500. In this course we will discuss the creation of civilizations, the rise and fall of empires, and the similarities and differences between these various cultures with regard to their development. As this is an introductory course to world history, it is important to note that we will not be able to delve too deeply into any one topic. | This course is a continuation of HY 117, Comparative World Civilizations. The course will examine the interactions between major world civilizations in Europe, Africa, and Asia. Course material will examine developments of history, politics, economics, and religion since 1500.","This course examines the political, economic, religious and social history of the world from the first civilizations that emerged around 3000 BC to about the year AD 1500. In this course we will discuss the creation of civilizations, the rise and fall of empires, and the similarities and differences between these various cultures with regard to their development. As this is an introductory course to world history, it is important to note that we will not be able to delve too deeply into any one topic. | This course is a continuation of HY 117, Comparative World Civilizations. The course will examine the interactions between major world civilizations in Europe, Africa, and Asia. Course material will examine developments of history, politics, economics, and religion since 1500."]    
 ]
 
+let ValenciaScores = 
+[
+    ["AP Art History","ARH 1000","ARH 2050/ARH 2051","ARH 2050/ARH 2051"],
+    ["AP Biology","BSC 1005C","BSC 1010C","BSC 1010C/BSC 1011C"],
+    ["AP Calculus AB","MAC 2311","MAC 2311","MAC 2311"],
+    ["AP Calculus BC","MAC 2311","MAC 2311/MAC 2312","MAC 2311/MAC 2312"],
+    ["AP Capstone Research","IDS 2930","IDS 2930","IDS 2930"],
+    ["AP Capstone Seminar","IDS 1350","IDS 1350","IDS 1350"],
+    ["AP Chemistry","CHM 1020","CHM 1045C","CHM 1045C/CHM 1046C"],
+    ["AP Chinese Language and Culture","CHI 2000","CHI 2000/CHI 2001","CHI 2000/CHI 2001"],
+    ["AP Computer Science A","CGS 1075","CGS 1075","CGS 1075"],
+    ["AP Computer Science AB","N/A","N/A","N/A"],
+    ["AP Computer Science Principles","N/A","N/A","N/A"],
+    ["AP Economics: Macro","ECO 2013","ECO 2013","ECO 2013"],
+    ["AP Economics: Micro","ECO 2023","ECO 2023","ECO 2023"],
+    ["AP English Language","ENC 1101","ENC 1101/ENC 1102","ENC 1101/ENC 1102"],
+    ["AP English Literature","ENC 1101/AML 2011","ENC 1101/ENC 1102/LIT 1005","ENC 1101/ENC 1102/LIT 1005"],
+    ["AP Environmental Science","EVR 1001","EVR 1001","EVR 1001"],
+    ["AP European History","EUH 1009","EUH 2000/EUH 2001","EUH 2000/EUH 2001"],
+    ["AP French Language and Culture","FRE 2200","FRE 2200/FRE 2201","FRE 2200/FRE 2201"],
+    ["AP French Literature","FRE 1005","FRE 1005/FRE 1006","FRE 1005/FRE 1006"],
+    ["AP German Language and Culture","GER 2200","GER 2200/GER 2201","GER 2200/GER 2201"],
+    ["AP Government and Politics: Comparative","CPO 2002","CPO 2002","CPO 2002"],
+    ["AP Government and Politics: United States","POS 2041","POS 2041","POS 2041"],
+    ["AP Human Geography","GEO 1400","GEO 1400","GEO 1400"],
+    ["AP Italian Language and Culture","ITA 2000","ITA 2000/ITA 2001","ITA 2000/ITA 2001"],
+    ["AP Japanese Language and Culture","JPN 2000","JPN 2000/JPN 2001","JPN 2000/JPN 2001"],
+    ["AP Latin Literature","N/A","N/A","N/A"],
+    ["AP Latin","LNW 1700","LNW 1700","LNW 1700"],
+    ["AP Music Theory","MUT 1111/MUT 1011C","MUT 1111/MUT 1011C","MUT 1111/MUT 1011C"],
+    ["AP Physics 1","PHY 2053C","PHY 2053C","PHY 2053C"],
+    ["AP Physics 2","PHY 2054C","PHY 2054C","PHY 2054C"],
+    ["AP Physics B","PHY 2053C","PHY 2053C/PHY 2054C","PHY 2053C/PHY 2054C"],
+    ["AP Physics C: Electricity and Magnetism","PHY 2054C","PHY 2049C","PHY 2049C"],
+    ["Ap Physics C: Mechanics","PHY 2053C","PHY 2048C","PHY 2048C"],
+    ["AP Psychcology","PSY 2012","PSY 2012","PSY 2012"],
+    ["AP Spanish Language and Culture","SPN 2200","SPN 2200/SPN 2201","SPN 2200/SPN 2201"],
+    ["AP Spanish Literature","SPN 1120","SPN 1120/SPN 1121","SPN 1102/SPN 1121"],
+    ["AP Statistics","STA 2023","STA 2023","STA 2023"],
+    ["AP Studio Art: Drawing","ART 1300","ART 1300","ART 1300"],
+    ["AP Studio Art: 2-D Design","ART 1201C","ART 1201C","ART 1201C"],
+    ["AP Studio Art: 3-D Design","ART 1203C","ART 1203C","ART 1203C"],
+    ["AP United States History","AMH 1000","AMH 2010/AMH 2020","AMH 2010/AMH 2020"],
+    ["AP World History","WOH 2022","WOH 2022","WOH 2022"]    
+]
+
+let ValenciaCourses = 
+[
+    ["AP Art History","ARH 1000","ARH 2050/ARH 2051","ARH 2050/ARH 2051"],
+    ["AP Biology","BSC 1005C","BSC 1010C","BSC 1010C/BSC 1011C"],
+    ["AP Calculus AB","MAC 2311","MAC 2311","MAC 2311"],
+    ["AP Calculus BC","MAC 2311","MAC 2311/MAC 2312","MAC 2311/MAC 2312"],
+    ["AP Capstone Research","IDS 2930","IDS 2930","IDS 2930"],
+    ["AP Capstone Seminar","IDS 1350","IDS 1350","IDS 1350"],
+    ["AP Chemistry","CHM 1020","CHM 1045C","CHM 1045C/CHM 1046C"],
+    ["AP Chinese Language and Culture","CHI 2000","CHI 2000/CHI 2001","CHI 2000/CHI 2001"],
+    ["AP Computer Science A","CGS 1075","CGS 1075","CGS 1075"],
+    ["AP Computer Science AB","N/A","N/A","N/A"],
+    ["AP Computer Science Principles","N/A","N/A","N/A"],
+    ["AP Economics: Macro","ECO 2013","ECO 2013","ECO 2013"],
+    ["AP Economics: Micro","ECO 2023","ECO 2023","ECO 2023"],
+    ["AP English Language","ENC 1101","ENC 1101/ENC 1102","ENC 1101/ENC 1102"],
+    ["AP English Literature","ENC 1101/AML 2011","ENC 1101/ENC 1102/LIT 1005","ENC 1101/ENC 1102/LIT 1005"],
+    ["AP Environmental Science","EVR 1001","EVR 1001","EVR 1001"],
+    ["AP European History","EUH 1009","EUH 2000/EUH 2001","EUH 2000/EUH 2001"],
+    ["AP French Language and Culture","FRE 2200","FRE 2200/FRE 2201","FRE 2200/FRE 2201"],
+    ["AP French Literature","FRE 1005","FRE 1005/FRE 1006","FRE 1005/FRE 1006"],
+    ["AP German Language and Culture","GER 2200","GER 2200/GER 2201","GER 2200/GER 2201"],
+    ["AP Government and Politics: Comparative","CPO 2002","CPO 2002","CPO 2002"],
+    ["AP Government and Politics: United States","POS 2041","POS 2041","POS 2041"],
+    ["AP Human Geography","GEO 1400","GEO 1400","GEO 1400"],
+    ["AP Italian Language and Culture","ITA 2000","ITA 2000/ITA 2001","ITA 2000/ITA 2001"],
+    ["AP Japanese Language and Culture","JPN 2000","JPN 2000/JPN 2001","JPN 2000/JPN 2001"],
+    ["AP Latin Literature","N/A","N/A","N/A"],
+    ["AP Latin","LNW 1700","LNW 1700","LNW 1700"],
+    ["AP Music Theory","MUT 1111/MUT 1011C","MUT 1111/MUT 1011C","MUT 1111/MUT 1011C"],
+    ["AP Physics 1","PHY 2053C","PHY 2053C","PHY 2053C"],
+    ["AP Physics 2","PHY 2054C","PHY 2054C","PHY 2054C"],
+    ["AP Physics B","PHY 2053C","PHY 2053C/PHY 2054C","PHY 2053C/PHY 2054C"],
+    ["AP Physics C: Electricity and Magnetism","PHY 2054C","PHY 2049C","PHY 2049C"],
+    ["Ap Physics C: Mechanics","PHY 2053C","PHY 2048C","PHY 2048C"],
+    ["AP Psychcology","PSY 2012","PSY 2012","PSY 2012"],
+    ["AP Spanish Language and Culture","SPN 2200","SPN 2200/SPN 2201","SPN 2200/SPN 2201"],
+    ["AP Spanish Literature","SPN 1120","SPN 1120/SPN 1121","SPN 1102/SPN 1121"],
+    ["AP Statistics","STA 2023","STA 2023","STA 2023"],
+    ["AP Studio Art: Drawing","ART 1300","ART 1300","ART 1300"],
+    ["AP Studio Art: 2-D Design","ART 1201C","ART 1201C","ART 1201C"],
+    ["AP Studio Art: 3-D Design","ART 1203C","ART 1203C","ART 1203C"],
+    ["AP United States History","AMH 1000","AMH 2010/AMH 2020","AMH 2010/AMH 2020"],
+    ["AP World History","WOH 2022","WOH 2022","WOH 2022"]    
+]
     
 let table = document.getElementById("table");
 let content = document.getElementById("content");
@@ -1079,8 +1170,11 @@ function handleSelect(ev){
     }else if(collegeSelect == "UA"){
         content.style.backgroundColor = "#a3a8ae";
         body.style.backgroundImage = "url('https://cdn.wallpapersafari.com/86/18/2zWB4y.jpg')";
+    }else if(collegeSelect == "Valencia"){
+        content.style.backgroundColor = "#fcb816";
+        body.style.backgroundImage = "url('https://lh3.googleusercontent.com/proxy/yYqVuMpRRDj8QoJ9sjokxJPtQlV2MFk1shF8SnVTi3rR3LaSnFGjrRvh0FXuNLdJGMxdNpbW2PcBTouJnHVDu49D_OWzRgrdoNnHN8Q')";
     }
-
+    
    
     let rows = document.querySelectorAll(".row");
     

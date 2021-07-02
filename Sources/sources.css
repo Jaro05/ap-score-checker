@@ -99,7 +99,15 @@ header{
     #headerTitle{
         font-size: 35px;
     }
-
+    
+    li{
+        margin-left: 5px;
+        margin-right: 5px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    
     .box{
         font-size: 12px;
     }
