@@ -190,30 +190,36 @@ header{
         border: black 2px solid;
         background: yellow;
         grid-column: 1/5;
+        overflow-y: scroll;
     }
     
     #boxTwo{
         border: black 2px solid;
         background: yellow;
         grid-column: 1/5;
+        overflow-y: scroll;
     }
     
     #boxThree{
         background: yellow;
         border: black 2px solid;
         grid-column: 1/5;
+        grid-row: 3/4;
+        overflow-y: scroll;
     }
     
     #boxFour{
         border: black 2px solid;
         background: yellow;
         grid-column: 1/5;
+        overflow-y: scroll;
     }
     
     #boxFive{
         border: black 2px solid;
         background: yellow;
         grid-column: 1/5;
+        overflow-y: scroll;
     }
     
     .thefront{
