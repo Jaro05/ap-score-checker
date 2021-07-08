@@ -69,6 +69,10 @@ header{
     text-align: center;
 }
 
+#subTitle{
+    font-size: 25px;
+}
+
 #selection{
     display: flex;
     flex-direction: column;

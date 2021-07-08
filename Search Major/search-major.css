@@ -72,6 +72,10 @@ header{
     text-align: center;
 }
 
+#subTitle{
+    font-size: 25px;
+}
+
 #selection{
     display: flex;
     flex-direction: column;
@@ -99,7 +103,7 @@ header{
     border: solid grey 2px;
 }
 
-#apSelection{
+#majorSelection{
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -109,7 +113,7 @@ header{
     padding-bottom: 20px;
 }
 
-#apExamSearchbar{
+#majorSearchbar{
     width: 400px;
     height: 40px;
     background-color: lightgrey;
@@ -154,7 +158,7 @@ header{
 }
 
 .boxCourses{
-    color: blue;
+    color: black;
 }
 
 .pointer{
@@ -222,7 +226,7 @@ header{
         width: 90%;
     }
 
-    #apExamSearchbar{
+    #majorSearchbar{
         height: 30px;
         font-size: 20px;
         width: 90%;

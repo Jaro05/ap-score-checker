@@ -1156,6 +1156,145 @@ let ValenciaDescriptions =
     ["AP United States History","N/A","Survey of early United States history, emphasizing political, social, and economic developments. Examines such topics as colonization, slavery, American Revolution, U.S. Constitution, War of 1812, emancipation movement, Civil War and Reconstruction. | Survey of United States history from the Gilded Age to the present, emphasizing political, social, and economic developments. Examines such topics as expansion, Populist and Progressive movements, Great Depression, the World Wars, reform and dissent in the 1960s and the Vietnam conflict.","Survey of early United States history, emphasizing political, social, and economic developments. Examines such topics as colonization, slavery, American Revolution, U.S. Constitution, War of 1812, emancipation movement, Civil War and Reconstruction. | Survey of United States history from the Gilded Age to the present, emphasizing political, social, and economic developments. Examines such topics as expansion, Populist and Progressive movements, Great Depression, the World Wars, reform and dissent in the 1960s and the Vietnam conflict."],
     ["AP World History","N/A","N/A","N/A"]    
 ]
+
+let UNCScores = 
+[
+    ["AP Art History","ARTH 152","ARTH 152","ARTH 152"],
+    ["AP Biology","BIOL 101/BIOL 101L","BIOL 101/BIOL 101L","BIOL 101/BIOL 101L/BIOL 279/BIOL 279L"],
+    ["AP Calculus AB","","",""],
+    ["AP Calculus BC","","",""],
+    ["AP Capstone Research","","",""],
+    ["AP Capstone Seminar","","",""],
+    ["AP Chemistry","","",""],
+    ["AP Chinese Language and Culture","","",""],
+    ["AP Computer Science A","","",""],
+    ["AP Computer Science AB","","",""],
+    ["AP Computer Science Principles","","",""],
+    ["AP Economics: Macro","","",""],
+    ["AP Economics: Micro","","",""],
+    ["AP English Language","","",""],
+    ["AP English Literature","","",""],
+    ["AP Environmental Science","","",""],
+    ["AP European History","","",""],
+    ["AP French Language and Culture","","",""],
+    ["AP French Literature","","",""],
+    ["AP German Language and Culture","","",""],
+    ["AP Government and Politics: Comparative","","",""],
+    ["AP Government and Politics: United States","","",""],
+    ["AP Human Geography","","",""],
+    ["AP Italian Language and Culture","","",""],
+    ["AP Japanese Language and Culture","","",""],
+    ["AP Latin Literature","","",""],
+    ["AP Latin","","",""],
+    ["AP Music Theory","","",""],
+    ["AP Physics 1","","",""],
+    ["AP Physics 2","","",""],
+    ["AP Physics B","","",""],
+    ["AP Physics C: Electricity and Magnetism","","",""],
+    ["Ap Physics C: Mechanics","","",""],
+    ["AP Psychcology","","",""],
+    ["AP Spanish Language and Culture","","",""],
+    ["AP Spanish Literature","","",""],
+    ["AP Statistics","","",""],
+    ["AP Studio Art: Drawing","","",""],
+    ["AP Studio Art: 2-D Design","","",""],
+    ["AP Studio Art: 3-D Design","","",""],
+    ["AP United States History","","",""],
+    ["AP World History","","",""]    
+]
+
+let UNCCoures = 
+[
+    ["AP Art History","ARTH 152. History of Western Art II.","ARTH 152. History of Western Art II.","ARTH 152. History of Western Art II."],
+    ["AP Biology","BIOL 101. Principles of Biology. | BIOL 101L. Introductory Biology Laboratory. | BIOL 279. Seminar in Organismal Biology. | BIOL 279L. Topics in Organismal Biology Laboratory.","BIOL 101. Principles of Biology. | BIOL 101L. Introductory Biology Laboratory.","BIOL 101. Principles of Biology. | BIOL 101L. Introductory Biology Laboratory. | BIOL 279. Seminar in Organismal Biology. | BIOL 279L. Topics in Organismal Biology Laboratory."],
+    ["AP Calculus AB","","",""],
+    ["AP Calculus BC","","",""],
+    ["AP Capstone Research","","",""],
+    ["AP Capstone Seminar","","",""],
+    ["AP Chemistry","","",""],
+    ["AP Chinese Language and Culture","","",""],
+    ["AP Computer Science A","","",""],
+    ["AP Computer Science AB","","",""],
+    ["AP Computer Science Principles","","",""],
+    ["AP Economics: Macro","","",""],
+    ["AP Economics: Micro","","",""],
+    ["AP English Language","","",""],
+    ["AP English Literature","","",""],
+    ["AP Environmental Science","","",""],
+    ["AP European History","","",""],
+    ["AP French Language and Culture","","",""],
+    ["AP French Literature","","",""],
+    ["AP German Language and Culture","","",""],
+    ["AP Government and Politics: Comparative","","",""],
+    ["AP Government and Politics: United States","","",""],
+    ["AP Human Geography","","",""],
+    ["AP Italian Language and Culture","","",""],
+    ["AP Japanese Language and Culture","","",""],
+    ["AP Latin Literature","","",""],
+    ["AP Latin","","",""],
+    ["AP Music Theory","","",""],
+    ["AP Physics 1","","",""],
+    ["AP Physics 2","","",""],
+    ["AP Physics B","","",""],
+    ["AP Physics C: Electricity and Magnetism","","",""],
+    ["Ap Physics C: Mechanics","","",""],
+    ["AP Psychcology","","",""],
+    ["AP Spanish Language and Culture","","",""],
+    ["AP Spanish Literature","","",""],
+    ["AP Statistics","","",""],
+    ["AP Studio Art: Drawing","","",""],
+    ["AP Studio Art: 2-D Design","","",""],
+    ["AP Studio Art: 3-D Design","","",""],
+    ["AP United States History","","",""],
+    ["AP World History","","",""]    
+]
+
+let UNCDescriptions = 
+[
+    ["AP Art History","This is the second semester of the two-semester survey course including Western art from the Renaissance to the modern period. ARTH 151 is not a prerequisite for ARTH 152. Honors version available","This is the second semester of the two-semester survey course including Western art from the Renaissance to the modern period. ARTH 151 is not a prerequisite for ARTH 152. Honors version available","This is the second semester of the two-semester survey course including Western art from the Renaissance to the modern period. ARTH 151 is not a prerequisite for ARTH 152. Honors version available"],
+    ["AP Biology","Open to all undergraduates. This course is the prerequisite to most higher courses in biology. An introduction to the fundamental principles of biology, including cell structure, chemistry, and function; genetics; evolution; adaptation; and ecology. (See department concerning Advanced Placement credit.) Three lecture hours a week. Honors version available | An examination of the fundamental concepts in biology with emphasis on scientific inquiry. Biological systems will be analyzed through experimentation, dissection, and observation. Three laboratory hours a week. Students may not receive credit for both BIOL 101L and BIOL 102L.","Open to all undergraduates. This course is the prerequisite to most higher courses in biology. An introduction to the fundamental principles of biology, including cell structure, chemistry, and function; genetics; evolution; adaptation; and ecology. (See department concerning Advanced Placement credit.) Three lecture hours a week. Honors version available | An examination of the fundamental concepts in biology with emphasis on scientific inquiry. Biological systems will be analyzed through experimentation, dissection, and observation. Three laboratory hours a week. Students may not receive credit for both BIOL 101L and BIOL 102L. | Permission of the instructor. An undergraduate course devoted to consideration of pertinent aspects of a selected organismal biological discipline. | Permission of the instructor. An undergraduate laboratory course covering aspects of a specific organismal biological discipline. Laboratory reports will be required. Research work is not included in this course.","Open to all undergraduates. This course is the prerequisite to most higher courses in biology. An introduction to the fundamental principles of biology, including cell structure, chemistry, and function; genetics; evolution; adaptation; and ecology. (See department concerning Advanced Placement credit.) Three lecture hours a week. Honors version available | An examination of the fundamental concepts in biology with emphasis on scientific inquiry. Biological systems will be analyzed through experimentation, dissection, and observation. Three laboratory hours a week. Students may not receive credit for both BIOL 101L and BIOL 102L. | Permission of the instructor. An undergraduate course devoted to consideration of pertinent aspects of a selected organismal biological discipline. | Permission of the instructor. An undergraduate laboratory course covering aspects of a specific organismal biological discipline. Laboratory reports will be required. Research work is not included in this course."],
+    ["AP Calculus AB","","",""],
+    ["AP Calculus BC","","",""],
+    ["AP Capstone Research","","",""],
+    ["AP Capstone Seminar","","",""],
+    ["AP Chemistry","","",""],
+    ["AP Chinese Language and Culture","","",""],
+    ["AP Computer Science A","","",""],
+    ["AP Computer Science AB","","",""],
+    ["AP Computer Science Principles","","",""],
+    ["AP Economics: Macro","","",""],
+    ["AP Economics: Micro","","",""],
+    ["AP English Language","","",""],
+    ["AP English Literature","","",""],
+    ["AP Environmental Science","","",""],
+    ["AP European History","","",""],
+    ["AP French Language and Culture","","",""],
+    ["AP French Literature","","",""],
+    ["AP German Language and Culture","","",""],
+    ["AP Government and Politics: Comparative","","",""],
+    ["AP Government and Politics: United States","","",""],
+    ["AP Human Geography","","",""],
+    ["AP Italian Language and Culture","","",""],
+    ["AP Japanese Language and Culture","","",""],
+    ["AP Latin Literature","","",""],
+    ["AP Latin","","",""],
+    ["AP Music Theory","","",""],
+    ["AP Physics 1","","",""],
+    ["AP Physics 2","","",""],
+    ["AP Physics B","","",""],
+    ["AP Physics C: Electricity and Magnetism","","",""],
+    ["Ap Physics C: Mechanics","","",""],
+    ["AP Psychcology","","",""],
+    ["AP Spanish Language and Culture","","",""],
+    ["AP Spanish Literature","","",""],
+    ["AP Statistics","","",""],
+    ["AP Studio Art: Drawing","","",""],
+    ["AP Studio Art: 2-D Design","","",""],
+    ["AP Studio Art: 3-D Design","","",""],
+    ["AP United States History","","",""],
+    ["AP World History","","",""]    
+]
+
     
 let table = document.getElementById("table");
 let content = document.getElementById("content");
@@ -1193,30 +1332,39 @@ function handleSelect(ev){
     }
 
     if(collegeSelect == "N/A"){
+        deleteCourseDescription();
         content.style.backgroundColor = "white";
         body.style.backgroundImage = "url('https://i.redd.it/92p34mtzd3y41.png')";
     }else if(collegeSelect == "UF"){
+        deleteCourseDescription();
         content.style.backgroundColor = "orange";
         body.style.backgroundImage = "url('https://i.ytimg.com/vi/Sr4zllx6ue0/maxresdefault.jpg')";   
     }else if(collegeSelect == "UCF"){
+        deleteCourseDescription();
         content.style.backgroundColor = "#ffcf06";
         body.style.backgroundImage = "url('https://pbs.twimg.com/profile_images/462235833274073088/2Mo_aqES.png')";
     }else if(collegeSelect == "Rollins"){
+        deleteCourseDescription();
         content.style.backgroundColor = "#fdb813";
         body.style.backgroundImage = "url('https://i.pinimg.com/originals/6b/a1/ec/6ba1ecc71545be6909405c356f2ef61d.jpg')";
     }else if(collegeSelect == "FSU"){
+        deleteCourseDescription();
         content.style.backgroundColor = "#d6cd96";
         body.style.backgroundImage = "url('https://epicsports.cachefly.net/images/40089/600/fan-mats-florida-state-fsu-logo-all-star-mat.jpg')";
     }else if(collegeSelect == "USF"){
+        deleteCourseDescription();
         content.style.backgroundColor = "#d9f01b";
         body.style.backgroundImage = "url('https://media.wtsp.com/assets/WTSP/images/591532575/591532575_1140x641.jpg')";
     }else if(collegeSelect == "UM"){
+        deleteCourseDescription();
         content.style.backgroundColor = "#FFFFFF";
         body.style.backgroundImage = "url('https://1000logos.net/wp-content/uploads/2018/12/Miami-Hurricanes-basketball-logo.jpg')";
     }else if(collegeSelect == "UA"){
+        deleteCourseDescription();
         content.style.backgroundColor = "#a3a8ae";
         body.style.backgroundImage = "url('https://cdn.wallpapersafari.com/86/18/2zWB4y.jpg')";
     }else if(collegeSelect == "Valencia"){
+        deleteCourseDescription();
         content.style.backgroundColor = "#fcb816";
         body.style.backgroundImage = "url('https://newschoolarch.edu/wp-content/uploads/2020/01/Valencia-College-Logo_Resized.jpg')";
     }
@@ -1244,6 +1392,7 @@ function clear(){
             table.removeChild(rows[i]);
         }
         clearCourseDescription();
+        
 }
 
 
@@ -1254,29 +1403,31 @@ exitBox.setAttribute("id","exitBox");
 //creates the courseDescription box
 document.addEventListener("click", (e) => {
     let collegeSelect = (document.getElementById("collegeSearchbar")[document.getElementById("collegeSearchbar").selectedIndex].value);
-    for(let r = 0; r < eval(collegeSelect +"Scores.length"); r++){
-        for(let c = 1; c < eval(collegeSelect + "Scores[0].length"); c++){
-            if(e.target.innerHTML == eval(collegeSelect + "Scores[r][c]")){
-                if(eval(collegeSelect + 'Scores[r][c].includes("/")')){
-                    let coursesArray = eval(collegeSelect + 'Courses[r][c].split("|")');
-                    let descriptionsArray = eval(collegeSelect + 'Descriptions[r][c].split("|")');
-                    createCourseDescription();
-                        for(let i = 0; i < coursesArray.length; i++){
-                            if(i == coursesArray.length - 1){
-                                courseDescription.innerHTML += "<b>" + coursesArray[i] + "</b>" + "<br>"+ descriptionsArray[i]; 
-                            }else{
-                                courseDescription.innerHTML += "<b>" + coursesArray[i] + "</b>" + "<br>"+ descriptionsArray[i] + "<br>" + "<br>"; 
-                            }
-                        }
-                        return("");
-                    }else{
+    if(collegeSelect != "N/A"){
+        for(let r = 0; r < eval(collegeSelect +"Scores.length"); r++){
+            for(let c = 1; c < eval(collegeSelect + "Scores[0].length"); c++){
+                if(e.target.innerHTML == eval(collegeSelect + "Scores[r][c]")){
+                    if(eval(collegeSelect + 'Scores[r][c].includes("/")')){
+                        let coursesArray = eval(collegeSelect + 'Courses[r][c].split("|")');
+                        let descriptionsArray = eval(collegeSelect + 'Descriptions[r][c].split("|")');
                         createCourseDescription();
-                        courseDescription.innerHTML += "<b>" + eval(collegeSelect + "Courses[r][c]") + "</b>" + "<br>"+ eval(collegeSelect + "Descriptions[r][c]") + "<br>";
-                        return("");
-                    }
+                            for(let i = 0; i < coursesArray.length; i++){
+                                if(i == coursesArray.length - 1){
+                                    courseDescription.innerHTML += "<b>" + coursesArray[i] + "</b>" + "<br>"+ descriptionsArray[i]; 
+                                }else{
+                                    courseDescription.innerHTML += "<b>" + coursesArray[i] + "</b>" + "<br>"+ descriptionsArray[i] + "<br>" + "<br>"; 
+                                }
+                            }
+                            return("");
+                        }else{
+                            createCourseDescription();
+                            courseDescription.innerHTML += "<b>" + eval(collegeSelect + "Courses[r][c]") + "</b>" + "<br>"+ eval(collegeSelect + "Descriptions[r][c]") + "<br>";
+                            return("");
+                        }
+                }
             }
-        }
-    }   
+        }  
+    } 
 })
 
 //clears the courseDescription when the red X is clicked
@@ -1284,7 +1435,6 @@ document.addEventListener("click", (e) => {
     if(e.target.innerHTML == "X"){
         clearCourseDescription();
         document.querySelector("body").removeChild(courseDescription);
-        
     }
 });
 
@@ -1298,6 +1448,12 @@ document.addEventListener("keyup", (e) => {
 
 function clearCourseDescription(){
     courseDescription.innerHTML = "Course Descriptions: <br>";
+}
+
+function deleteCourseDescription(){
+    if(document.querySelector("body").lastElementChild.id == "courseDescription"){
+        document.querySelector("body").removeChild(courseDescription);
+    }
 }
 
 function createCourseDescription(){
