@@ -1,5 +1,5 @@
 
-@font-face{
+/*@font-face{
     font-family: "Gothic A1";
     src: url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
 }
@@ -8,6 +8,7 @@
     font-family: "Roboto";
     src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 }
+*/
 
 body{
     display: flex;
@@ -211,6 +212,7 @@ header{
     
     .box{
         font-size: 12px;
+        overflow-wrap: anywhere;
     }
 
     #selection{

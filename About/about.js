@@ -3,7 +3,6 @@ function goToBack(){
 }
 
 
-
 let boxOne = document.getElementById("boxOne");
 boxOne.addEventListener("click", () => {
     if(boxOne.getElementsByTagName("div")[0].classList == "thefront"){
@@ -95,7 +94,7 @@ boxFive.addEventListener("click", () => {
         element.parentElement.removeChild(element);
         let back = document.createElement("div");
         back.classList.add("theback");
-        back.innerHTML = 'This information is currently most useful for Florida residents. A majority of provided data is for the top colleges in Florida. However, we are working to expand our library to provide data for to help AP students across the United States.';
+        back.innerHTML = 'This information is currently most useful for Florida residents. A majority of provided data is for the top colleges in Florida. However, we are working to expand our library to provide data for AP students across the United States.';
         boxFive.appendChild(back);
     }else if(boxFive.getElementsByTagName("div")[0].classList == "theback"){
         let element = boxFive.getElementsByTagName("div")[0];

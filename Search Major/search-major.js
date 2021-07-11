@@ -137,11 +137,156 @@ let UFDescriptions =
     ["AP World History","The L000 course number has no UF course equivalent. The credit applies to the minimum credits for the degree but does not provide credit toward general education, writing requirement, or count toward the major.","The L000 course number has no UF course equivalent. The credit applies to the minimum credits for the degree but does not provide credit toward general education, writing requirement, or count toward the major.","The L000 course number has no UF course equivalent. The credit applies to the minimum credits for the degree but does not provide credit toward general education, writing requirement, or count toward the major."]
 ]
 
+let UCFScores = 
+[
+    ["AP Art History","ARH 1000","ARH 1000/ARH 2050","ARH 1000/ARH 2050"],
+    ["AP Biology","BSC 1005/BSC 1005L","BSC 2010C","BSC 2010C/BSC 2011C "],
+    ["AP Calculus AB","MAC 2311","MAC 2311","MAC 2311"],
+    ["AP Calculus BC","MAC 2311","MAC 2311/MAC 2312","MAC 2311/MAC 2312"],
+    ["AP Capstone Research","IDS 1911","IDS 1911","IDS 1911"],
+    ["AP Capstone Seminar","IDS 1350","IDS 1350","IDS 1350"],
+    ["AP Chemistry","CHM 1020/1020L","CHM 2045C","CHM 2045C/CHM 2046/CHM 2046L"],
+    ["AP Chinese Language and Culture","CHI 2200","CHI 2200/CHI 2201","CHI 2200/CHI 2201"],
+    ["AP Computer Science A","CGS 1075","CGS 1075","CGS 1075"],
+    ["AP Computer Science AB","CGS 1076","CGS 1076","CGS 1076"],
+    ["AP Computer Science Principles","COP 2000","COP 2000","COP 2000"],
+    ["AP Economics: Macro","ECO 2013","ECO 2013","ECO 2013"],
+    ["AP Economics: Micro","ECO 2023","ECO 2023","ECO 2023"],
+    ["AP English Language","ENC 1101","ENC 1101/ENC 1102","ENC 1101/ENC 1102"],
+    ["AP English Literature","ENC 1101","ENC 1101/LIT 1005","ENC 1101/LIT 1005"],
+    ["AP Environmental Science","ISC 1051","ISC 1051","ISC 1051"],
+    ["AP European History","EUH 1009","EUH 2000/EUH 2001","EUH 2000/EUH 2001"],
+    ["AP French Language and Culture","FRE 2200","FRE 2200/FRE 2201","FRE 2200/FRE 2201"],
+    ["AP French Literature","FRW 3100","FRW 3100/FRW 3101","FRW 3100/FRW 3101"],
+    ["AP German Language and Culture","GER 2200","GER 2200/GER 2201","GER 2200/GER 2201"],
+    ["AP Government and Politics: Comparative","CPO 1002","CPO 1002","CPO 1002"],
+    ["AP Government and Politics: United States","POS 2041","POS 2041","POS 2041"],
+    ["AP Human Geography","GEO 2400","GEO 2400","GEO 2400"],
+    ["AP Italian Language and Culture","ITA 2200","ITA 2200/ITA 2201","ITA 2200/ITA 2201"],
+    ["AP Japanese Language and Culture","JPN 2200","JPN 2200/JPN 2201","JPN 2200/JPN 2201"],
+    ["AP Latin Literature","LNW 3700","LNW 3700","LNW 3700"],
+    ["AP Latin","LNW 2321","LNW 2321","LNW 2321"],
+    ["AP Music Theory","MUT 1001/MUT 1111/MUT 1241","MUT 1001/MUT 1111/MUT 1241","MUT 1001/MUT 1111/MUT 1241"],
+    ["AP Physics 1","PHY 2053C","PHY 2053C","PHY 2053C"],
+    ["AP Physics 2","PHY 2054C","PHY 2054C","PHY 2054C"],
+    ["AP Physics B","PHY 2053C","PHY 2053C/PHY 2054C","PHY 2053C/PHY 2054C"],
+    ["AP Physics C: Electricity and Magnetism","PHY 2054C","PHY 2049C","PHY 2049C"],
+    ["Ap Physics C: Mechanics","PHY 2053C","PHY 2048C","PHY 2048C"],
+    ["AP Psychcology","PSY 2012","PSY 2012","PSY 2012"],
+    ["AP Spanish Language and Culture","SPN 2200","SPN 2200/SPN 2201","SPN 2200/SPN 2201"],
+    ["AP Spanish Literature","SPW 3100","SPW 3100/SPW 3201","SPW 3100/SPW 3201"],
+    ["AP Statistics","STA 2023","STA 2023","STA 2023"],
+    ["AP Studio Art: Drawing","ART 2300C","ART 2300C","ART 2300C"],
+    ["AP Studio Art: 2-D Design","ART 2201C","ART 2201C","ART 2201C"],
+    ["AP Studio Art: 3-D Design","ART 2203C","ART 2203C","ART 2203C"],
+    ["AP United States History","AMH 2000","AMH 2010/AMH 2020","AMH 2010/AMH 2020"],
+    ["AP World History","WOH 2022","WOH 2022","WOH 2022"]    
+];
+
+let UCFCourses = 
+[
+    ["AP Art History","ARH 1000","ARH 1000 | ARH 2050 History of Western Art I","ARH 1000 | ARH 2050 History of Western Art I"],
+    ["AP Biology","BSC 1005 Biological Principles | BSC 1005L Biological Principles Laboratory","BSC 2010C Biology I","BSC 2010C Biology I | BSC 2011C Biology II"],
+    ["AP Calculus AB","MAC 2311C Calculus with Analytic Geometry I","MAC 2311C Calculus with Analytic Geometry I","MAC 2311C Calculus with Analytic Geometry I"],
+    ["AP Calculus BC","MAC 2311C Calculus with Analytic Geometry I","MAC 2311C Calculus with Analytic Geometry I | MAC 2312 Calculus with Analytic Geometry II","MAC 2311C Calculus with Analytic Geometry I | MAC 2312 Calculus with Analytic Geometry II"],
+    ["AP Capstone Research","IDS 1911 Introduction to Research I","IDS 1911 Introduction to Research I","IDS 1911 Introduction to Research I"],
+    ["AP Capstone Seminar","IDS 1350","IDS 1350","IDS 1350"],
+    ["AP Chemistry","CHM 1020 Concepts in Chemistry | CHM 1020L Concepts in Chemistry Labratory","CHM 2045C Chemistry Fundamentals I","CHM 2045C Chemistry Fundamentals I | CHM 2046 Chemistry Fundamentals II | CHM 2046L Chemistry Fundamentals Laboratory"],
+    ["AP Chinese Language and Culture","CHI 2200 Intermediate Chinese I","CHI 2200 Intermediate Chinese I | CHI 2201 Intermediate Chinese II","CHI 2200 Intermediate Chinese I | CHI 2201 Intermediate Chinese II"],
+    ["AP Computer Science A","CGS 1075","CGS 1075","CGS 1075"],
+    ["AP Computer Science AB","CGS 1076","CGS 1076","CGS 1076"],
+    ["AP Computer Science Principles","COP 2000","COP 2000","COP 2000"],
+    ["AP Economics: Macro","ECO 2013 Principles of Macroeconomics","ECO 2013 Principles of Macroeconomics","ECO 2013 Principles of Macroeconomics"],
+    ["AP Economics: Micro","ECO 2023 Principles of Microeconomics","ECO 2023 Principles of Microeconomics","ECO 2023 Principles of Microeconomics"],
+    ["AP English Language","ENC 1101 Composition I","ENC 1101 Composition I | ENC 1102 Composition II","ENC 1101 Composition I | ENC 1102 Composition II"],
+    ["AP English Literature","ENC 1101 Composition I","ENC 1101 Composition I | LIT 1005","ENC 1101 Composition I | LIT 1005"],
+    ["AP Environmental Science","ISC 1051","ISC 1051","ISC 1051"],
+    ["AP European History","EUH 1009","EUH 2000 Western Civilization I | EUH 2001 Western Civilization II","EUH 2000 Western Civilization I | EUH 2001 Western Civilization II"],
+    ["AP French Language and Culture","FRE 2200 Intermediate French Language and Civilization I","FRE 2200 Intermediate French Language and Civilization I | FRE 2201 Intermediate French Language and Civilization II","FRE 2200 Intermediate French Language and Civilization I | FRE 2201 Intermediate French Language and Civilization II"],
+    ["AP French Literature","FRW 3100 Survey of French Literature I","FRW 3100 Survey of French Literature I | FRW 3101 Survey of French Literature II","FRW 3100 Survey of French Literature I | FRW 3101 Survey of French Literature II"],
+    ["AP German Language and Culture","GER 2200 Intermediate German Language and Civilization I","GER 2200 Intermediate German Language and Civilization I | GER 2201 Intermediate German Language and Civilization II","GER 2200 Intermediate German Language and Civilization I | GER 2201 Intermediate German Language and Civilization II"],
+    ["AP Government and Politics: Comparative","CPO 1002","CPO 1002","CPO 1002"],
+    ["AP Government and Politics: United States","POS 2041 American National Government","POS 2041 American National Government","POS 2041 American National Government"],
+    ["AP Human Geography","GEO 2400","GEO 2400","GEO 2400"],
+    ["AP Italian Language and Culture","ITA 2200 Intermediate Italian Language and Civilization I","ITA 2200 Intermediate Italian Language and Civilization I | ITA 2201 - Intermediate Italian Language and Civilization II","ITA 2200 Intermediate Italian Language and Civilization I | ITA 2201 - Intermediate Italian Language and Civilization II"],
+    ["AP Japanese Language and Culture","JPN 2200 Intermediate Japanese Language and Civilization I","JPN 2200 Intermediate Japanese Language and Civilization I | JPN 2201 Intermediate Japanese Language and Civilization II","JPN 2200 Intermediate Japanese Language and Civilization I | JPN 2201 Intermediate Japanese Language and Civilization II"],
+    ["AP Latin Literature","LNW 3700","LNW 3700","LNW 3700"],
+    ["AP Latin","LNW 2321","LNW 2321","LNW 2321"],
+    ["AP Music Theory","MUT 1001 | MUT 1111 | MUT 1241","MUT 1001 | MUT 1111 | MUT 1241","MUT 1001 | MUT 1111 | MUT 1241"],
+    ["AP Physics 1","PHY 2053C College Physics I","PHY 2053C College Physics I","PHY 2053C College Physics I"],
+    ["AP Physics 2","PHY 2054C College Physics II","PHY 2054C College Physics II","PHY 2054C College Physics II"],
+    ["AP Physics B","PHY 2053C College Physics I","PHY 2053C College Physics I | PHY 2054C College Physics II","PHY 2053C College Physics I | PHY 2054C College Physics II"],
+    ["AP Physics C: Electricity and Magnetism","PHY 2054C College Physics II","PHY 2049C General Physics Using Calculus II","PHY 2049C General Physics Using Calculus II"],
+    ["Ap Physics C: Mechanics","PHY 2053C College Physics I","PHY 2048C General Physics Using Calculus I","PHY 2048C General Physics Using Calculus I"],
+    ["AP Psychcology","PSY 2012 General Psychology","PSY 2012 General Psychology","PSY 2012 General Psychology"],
+    ["AP Spanish Language and Culture","SPN 2200 Intermediate Spanish Language and Civilization I","SPN 2200 Intermediate Spanish Language and Civilization I | SPN 2201 Intermediate Spanish Language and Civilization II","SPN 2200 Intermediate Spanish Language and Civilization I | SPN 2201 Intermediate Spanish Language and Civilization II"],
+    ["AP Spanish Literature","SPW 3100 Survey of Spanish Literature I","SPW 3100 Survey of Spanish Literature I | SPW 3201","SPW 3100 Survey of Spanish Literature I | SPW 3201"],
+    ["AP Statistics","STA 2023 Statistical Methods I","STA 2023 Statistical Methods I","STA 2023 Statistical Methods I"],
+    ["AP Studio Art: Drawing","ART 2300C Drawing Fundamentals I","ART 2300C Drawing Fundamentals I","ART 2300C Drawing Fundamentals I"],
+    ["AP Studio Art: 2-D Design","ART 2201C Design Fundamentals-Two Dimensional","ART 2201C Design Fundamentals-Two Dimensional","ART 2201C Design Fundamentals-Two Dimensional"],
+    ["AP Studio Art: 3-D Design","ART 2203C Design Fundamentals-Three Dimensional","ART 2203C Design Fundamentals-Three Dimensional","ART 2203C Design Fundamentals-Three Dimensional"],
+    ["AP United States History","AMH 2000","AMH 2010 U.S. History: 1492-1877 | AMH 2020 U.S. History: 1877-Present","AMH 2010 U.S. History: 1492-1877 | AMH 2020 U.S. History: 1877-Present"],
+    ["AP World History","WOH 2022 World Civilization II","WOH 2022 World Civilization II","WOH 2022 World Civilization II"]    
+]
+
+let UCFDescriptions = 
+[
+    ["AP Art History","N/A","N/A | Painting, sculpture and architecture from the Prehistoric Era through the Renaissance.","N/A | Painting, sculpture and architecture from the Prehistoric Era through the Renaissance."],
+    ["AP Biology","A study of various biological factors which affect the health and survival of man in modern society. Designed for non-majors. | The laboratory to accompany BSC 1005.","Open only to students whose major requires this specific course. Cellular and chemical basis of life, genetics, and the theory of evolution. Emphasis on problem solving, analysis, synthesis of information, and applying data effectively.","Open only to students whose major requires this specific course. Cellular and chemical basis of life, genetics, and the theory of evolution. Emphasis on problem solving, analysis, synthesis of information, and applying data effectively. | Continuation of BSC 2010C. Organismal anatomy and physiology as it relates to biodiversity, ecology and evolution. Emphasis on problem solving, analysis, synthesis of information, and applying data effectively."],
+    ["AP Calculus AB","Analytic geometry; limits, continuity, differentiation of algebraic and trigonometric functions; applications of derivatives; integration and the fundamental theorem of calculus; applications of definite integrals.","Analytic geometry; limits, continuity, differentiation of algebraic and trigonometric functions; applications of derivatives; integration and the fundamental theorem of calculus; applications of definite integrals.","Analytic geometry; limits, continuity, differentiation of algebraic and trigonometric functions; applications of derivatives; integration and the fundamental theorem of calculus; applications of definite integrals."],
+    ["AP Calculus BC","Analytic geometry; limits, continuity, differentiation of algebraic and trigonometric functions; applications of derivatives; integration and the fundamental theorem of calculus; applications of definite integrals.","Analytic geometry; limits, continuity, differentiation of algebraic and trigonometric functions; applications of derivatives; integration and the fundamental theorem of calculus; applications of definite integrals. | Differentiation and integration of exponential, logarithmic, inverse trigonometric functions; techniques of integration; further applications of integration; parametric equations, polar coordinates; infinite sequences and series.","Analytic geometry; limits, continuity, differentiation of algebraic and trigonometric functions; applications of derivatives; integration and the fundamental theorem of calculus; applications of definite integrals. | Differentiation and integration of exponential, logarithmic, inverse trigonometric functions; techniques of integration; further applications of integration; parametric equations, polar coordinates; infinite sequences and series."],
+    ["AP Capstone Research","N/A","N/A","N/A"],
+    ["AP Capstone Seminar","N/A","N/A","N/A"],
+    ["AP Chemistry","Concepts will be examined to provide insight into the significant role that chemistry plays in our culture. Intended as a general education course. | N/A","Principles of modern chemistry, units and measures, basic physical theory of chemical reactivity, stoichiometry, reactions in aqueous solutions, thermochemistry, atomic structure, periodicity, chemical bonding, states of matter, gases.","Principles of modern chemistry, units and measures, basic physical theory of chemical reactivity, stoichiometry, reactions in aqueous solutions, thermochemistry, atomic structure, periodicity, chemical bonding, states of matter, gases. | Continuation of CHM 2045C or the CHM 2040 & CHM 2041 sequence. Intermolecular forces, solutions and colligative properties. equilibria, thermodynamics, chemical kinetics, electrochemistry, nuclear chemistry. | Illustration of chemical principles and introduction to the techniques of inorganic and physical chemistry. IMPORTANT: Attendance of the first laboratory session dealing with safety procedures is mandatory; students who do not attend must immediately call the Chemistry Department, and may be dropped from the class."],
+    ["AP Chinese Language and Culture","Development of Chinese language skills at the intermediate level.","Development of Chinese language skills at the intermediate level. | Continuation of CHI 2200 with emphasis on Chinese cultures.","Development of Chinese language skills at the intermediate level. | Continuation of CHI 2200 with emphasis on Chinese cultures."],
+    ["AP Computer Science A","N/A","N/A","N/A"],
+    ["AP Computer Science AB","N/A","N/A","N/A"],
+    ["AP Computer Science Principles","N/A","N/A","N/A"],
+    ["AP Economics: Macro","An introduction to macroeconomics, including an overview of the market economy; national income, employment, and price level determination, stabilization policies, and international economics.","An introduction to macroeconomics, including an overview of the market economy; national income, employment, and price level determination, stabilization policies, and international economics.","An introduction to macroeconomics, including an overview of the market economy; national income, employment, and price level determination, stabilization policies, and international economics."],
+    ["AP Economics: Micro","The determination of prices in a market economy; their role in allocating consumer and producer goods and in distributing incomes, including attempts to improve market efficiency through public policy.","The determination of prices in a market economy; their role in allocating consumer and producer goods and in distributing incomes, including attempts to improve market efficiency through public policy.","The determination of prices in a market economy; their role in allocating consumer and producer goods and in distributing incomes, including attempts to improve market efficiency through public policy."],
+    ["AP English Language","Expository writing with emphasis on effective communication and critical thinking. Emphasizing the writing process writing topics are based on selected readings and on student experiences.","Expository writing with emphasis on effective communication and critical thinking. Emphasizing the writing process writing topics are based on selected readings and on student experiences. | Focus on extensive research in analytical and argumentative writing based on a variety of readings from the humanities. Emphasis on developing critical thinking and diversity of perspective.","Expository writing with emphasis on effective communication and critical thinking. Emphasizing the writing process writing topics are based on selected readings and on student experiences. | Focus on extensive research in analytical and argumentative writing based on a variety of readings from the humanities. Emphasis on developing critical thinking and diversity of perspective."],
+    ["AP English Literature","Expository writing with emphasis on effective communication and critical thinking. Emphasizing the writing process writing topics are based on selected readings and on student experiences.","Expository writing with emphasis on effective communication and critical thinking. Emphasizing the writing process writing topics are based on selected readings and on student experiences. | N/A","Expository writing with emphasis on effective communication and critical thinking. Emphasizing the writing process writing topics are based on selected readings and on student experiences. | N/A"],
+    ["AP Environmental Science","N/A","N/A","N/A"],
+    ["AP European History","N/A","A survey of western civilization from ancient to 1648. | A survey of western civilization from 1648 to present. May be taken before EUH 2000.","A survey of western civilization from ancient to 1648. | A survey of western civilization from 1648 to present. May be taken before EUH 2000."],
+    ["AP French Language and Culture","Development of language skills and cultural knowledge at the intermediate level.","Development of language skills and cultural knowledge at the intermediate level. | Continuation of FRE 2200 with emphasis on French civilization.","Development of language skills and cultural knowledge at the intermediate level.","Development of language skills and cultural knowledge at the intermediate level. | Continuation of FRE 2200 with emphasis on French civilization."],
+    ["AP French Literature","Main literary currents and works from the Middle Ages through the 18th century.","Main literary currents and works from the Middle Ages through the 18th century. | Main literary currents and works of the 19th and 20th centuries.","Main literary currents and works from the Middle Ages through the 18th century. | Main literary currents and works of the 19th and 20th centuries."],
+    ["AP German Language and Culture","Development of language skills and cultural knowledge at the intermediate level.","Development of language skills and cultural knowledge at the intermediate level. | Continuation of GER 2200 with emphasis on German civilization.","Development of language skills and cultural knowledge at the intermediate level. | Continuation of GER 2200 with emphasis on German civilization."],
+    ["AP Government and Politics: Comparative","N/A","N/A","N/A"],
+    ["AP Government and Politics: United States","A study of the dynamics of American national government, including its structure, organization, powers, and procedures.","A study of the dynamics of American national government, including its structure, organization, powers, and procedures.","A study of the dynamics of American national government, including its structure, organization, powers, and procedures."],
+    ["AP Human Geography","N/A","N/A","N/A"],
+    ["AP Italian Language and Culture","Designed to continue development of language skills at intermediate level, plus a review of grammar, study of syntax, idiomatic expression, extensive readings, and further study of Italian culture.","Designed to continue development of language skills at intermediate level, plus a review of grammar, study of syntax, idiomatic expression, extensive readings, and further study of Italian culture. | Designed to continue development of language skills at intermediate level, plus a review of grammar and study of syntax, with emphasis on Italian civilization.","Designed to continue development of language skills at intermediate level, plus a review of grammar, study of syntax, idiomatic expression, extensive readings, and further study of Italian culture. | Designed to continue development of language skills at intermediate level, plus a review of grammar and study of syntax, with emphasis on Italian civilization."],
+    ["AP Japanese Language and Culture","This course aims to aid in acquiring and refining the acquisition of the four skills in modern Japanese: speaking, listening, reading, and writing. The emphasis is on accurate communication in Japanese. The culture of Japan will also be studied.","This course aims to aid in acquiring and refining the acquisition of the four skills in modern Japanese: speaking, listening, reading, and writing. The emphasis is on accurate communication in Japanese. The culture of Japan will also be studied. | Continuation of JPN 2200 with emphasis on Japanese civilization.","This course aims to aid in acquiring and refining the acquisition of the four skills in modern Japanese: speaking, listening, reading, and writing. The emphasis is on accurate communication in Japanese. The culture of Japan will also be studied. | Continuation of JPN 2200 with emphasis on Japanese civilization."],
+    ["AP Latin Literature","N/A","N/A","N/A"],
+    ["AP Latin","N/A","N/A","N/A"],
+    ["AP Music Theory","MUT 1001 if composite score is 3 or higher | MUT 1111 if both aural and non-aural subscores are 3 or higher | MUT 1241 if both aural and non-aural subscores are 3 or higher","MUT 1001 if composite score is 3 or higher | MUT 1111 if both aural and non-aural subscores are 3 or higher | MUT 1241 if both aural and non-aural subscores are 3 or higher","MUT 1001 if composite score is 3 or higher | MUT 1111 if both aural and non-aural subscores are 3 or higher | MUT 1241 if both aural and non-aural subscores are 3 or higher"],
+    ["AP Physics 1","Mechanics, waves, thermodynamics.","Mechanics, waves, thermodynamics.","Mechanics, waves, thermodynamics."],
+    ["AP Physics 2","Fluids, electricity and magnetism, optics, x-rays, radioactivity.","Fluids, electricity and magnetism, optics, x-rays, radioactivity.","Fluids, electricity and magnetism, optics, x-rays, radioactivity."],
+    ["AP Physics B","Mechanics, waves, thermodynamics.","Mechanics, waves, thermodynamics. | Fluids, electricity and magnetism, optics, x-rays, radioactivity.","Mechanics, waves, thermodynamics. | Fluids, electricity and magnetism, optics, x-rays, radioactivity."],
+    ["AP Physics C: Electricity and Magnetism","Fluids, electricity and magnetism, optics, x-rays, radioactivity.","Electricity, magnetism, optics.","Electricity, magnetism, optics."],
+    ["Ap Physics C: Mechanics","Mechanics, waves, thermodynamics.","Mechanics, Thermodynamics, fluids.","Mechanics, Thermodynamics, fluids."],
+    ["AP Psychcology","A survey of the basic principles, theories, and methods of contemporary psychology, including the study of human diversity.","A survey of the basic principles, theories, and methods of contemporary psychology, including the study of human diversity.","A survey of the basic principles, theories, and methods of contemporary psychology, including the study of human diversity."],
+    ["AP Spanish Language and Culture","Development of language skills and cultural knowledge at the intermediate level.","Development of language skills and cultural knowledge at the intermediate level. | Continuation of SPN 2200, with emphasis on Spanish civilization.","Development of language skills and cultural knowledge at the intermediate level.","Development of language skills and cultural knowledge at the intermediate level. | Continuation of SPN 2200, with emphasis on Spanish civilization."],
+    ["AP Spanish Literature","Main literary currents and works from the Middle Ages through the Eighteenth century.","Main literary currents and works from the Middle Ages through the Eighteenth century. | N/A","Main literary currents and works from the Middle Ages through the Eighteenth century.","Main literary currents and works from the Middle Ages through the Eighteenth century. | N/A"],
+    ["AP Statistics","First methods course introducing probability and statistical inference, including estimation, hypothesis testing, binomial and normal distributions, sample size.","First methods course introducing probability and statistical inference, including estimation, hypothesis testing, binomial and normal distributions, sample size.","First methods course introducing probability and statistical inference, including estimation, hypothesis testing, binomial and normal distributions, sample size."],
+    ["AP Studio Art: Drawing","Priority given to students whose major requires this course. Drawing as a means of formal organization. Introduction to problems in drawing methods and media. Emphasis on description techniques.","Priority given to students whose major requires this course. Drawing as a means of formal organization. Introduction to problems in drawing methods and media. Emphasis on description techniques.","Priority given to students whose major requires this course. Drawing as a means of formal organization. Introduction to problems in drawing methods and media. Emphasis on description techniques."],
+    ["AP Studio Art: 2-D Design","Priority given to students whose major requires this course. Materials, processes, form. Emphasis on two-dimensional design problems, including problems in black and white and basic color theory.","Priority given to students whose major requires this course. Materials, processes, form. Emphasis on two-dimensional design problems, including problems in black and white and basic color theory.","Priority given to students whose major requires this course. Materials, processes, form. Emphasis on two-dimensional design problems, including problems in black and white and basic color theory."],
+    ["AP Studio Art: 3-D Design","Priority given to students whose major requires this course. Basic three-dimensional design using the various sculptural media.","Priority given to students whose major requires this course. Basic three-dimensional design using the various sculptural media.","Priority given to students whose major requires this course. Basic three-dimensional design using the various sculptural media."],
+    ["AP United States History","N/A","Survey of U.S. History from 1492-1877. | Survey of U.S. History from 1877 to the present.","N/A","Survey of U.S. History from 1492-1877. | Survey of U.S. History from 1877 to the present."],
+    ["AP World History","Rise of modern civilization from 1500 to the present, with an emphasis on the confrontation between the Western and non-Western spheres of civilization.","Rise of modern civilization from 1500 to the present, with an emphasis on the confrontation between the Western and non-Western spheres of civilization.","Rise of modern civilization from 1500 to the present, with an emphasis on the confrontation between the Western and non-Western spheres of civilization."]
+]
+
 let UFMajors = 
 [
     ["Accounting","ECO 2023,MAC 2233,ECO 2013,MAC 2234,ACG 2021,CGS 2531,ISM 3013,GEB 3218,ACG 2071,STA 2023,ACG 3101,FIN 3403,MAN 3025,QMB 3250,ACG 3401,ACG 4111,MAR 3023,QMB 3302,ACG 4341,BUL 4310,GEB 3373,ACG 4632,MAN 4504,TAX 4001,TAX 5025"],
     ["Computer Engineering","COP 3502C,EGN 2020C,MAC 2311,COP 3503C,COT 3100,MAC 2312,PHY 2048,PHY 2048L,CDA 3101,COP 3530,MAC 2313,PHY 2049,CHM 2045,CHM 2095,CHM 2045L,EEL 3701C,ENC 3246,MAP 2302,EEL 3111C,EEL 4744C,STA 3032,CEN 3031,EEL 4712C,MAS 3114,CEN 3907C,EGN 4951,COP 4600,CEN 3908C,EGN 4952,EEL 3135,EGS 4034"],
     ["Aerospace Engineering","CHM 2045,CHM 2095,CHM 2045L,EML 2920,ENC 1101,ENC 1102,MAC 2311,EML 2023,MAC 2312,PHY 2048,2048L,COP 2271,MAC 2313,PHY 2049,2049L,EML 3100,MAP 2302,EEL 3003,EML 4312,,,,,,,"]
+]
+
+let UCFMajors = 
+[
+    ["Accounting","CGS 2100C,ECO 2013,ECO 2023,ACG 2021,CGS 2100C,MAC 2233,STA 2023,MAC 2311,MAC 2312,ACG 3131,"],
+    ["Computer Engineering","ENC 1101,ENC 1102,STA 3032,PHY 2048C,MAC 2311,MAC 2312,MAC 2313,PHY 2049C,CHS 1440,CHM 2045C,STA 3032,COP 3502C,COP 3503C"],
+    ["Aerospace Engineering","ENC 1101,ENC 1102,MAC 2311,STA 3032,MAC 2312,MAC 2313,PHY 2048C,PHY 2049C,CHS 1440,CHM 2045C,STA 3032,COP 3223C,"]
 ]
 
 
@@ -163,10 +308,10 @@ function handleSelect(ev){
     clear();
     let arrayOfScores = [""];
     if(collegeSelect != "N/A"){
-        if(collegeSelect == "UF"){
-            for(let r = 0; r < UFMajors.length; r++){
-                    if(UFMajors[r][0] == majorSelect){
-                        arrayOfScores = UFMajors[r][1].split(",");
+        
+            for(let r = 0; r < eval(collegeSelect + "Majors.length"); r++){
+                    if(eval(collegeSelect + "Majors[r][0]") == majorSelect){
+                        arrayOfScores = eval(collegeSelect + "Majors[r][1]").split(",");
                     }
             }
 
@@ -174,25 +319,25 @@ function handleSelect(ev){
             
             //loops through arrayOfScores and compares it to the Score data for the specific college to find a match. 
             for(let i = 0; i < arrayOfScores.length; i++){
-                    for(let j = 0; j < UFScores.length; j++){
-                        for(let k = 0; k < UFScores[j].length; k++){
-                            let newArray = UFScores[j][k].split("/");
+                    for(let j = 0; j < eval(collegeSelect + "Scores.length"); j++){
+                        for(let k = 0; k < eval(collegeSelect + "Scores[j].length"); k++){
+                            let newArray = eval(collegeSelect + "Scores[j][k]").split("/");
                             //Executes if first item in UFScores has a slash
-                            if(UFScores[j][k].includes("/")){
+                            if(eval(collegeSelect + "Scores[j][k]").includes("/")){
                                 if(newArray.includes(arrayOfScores[i])){
                                     //does this already exist in the table??
                                     //if yes, then break, if not, then continue on. \
-                                        if(alreadyDone.includes(UFScores[j][0])){
+                                        if(alreadyDone.includes(eval(collegeSelect + "Scores[j][0]"))){
                                             console.log("already includes this");
                                             break;
                                         }
-                                    alreadyDone += UFScores[j][0];
+                                    alreadyDone += eval(collegeSelect + "Scores[j][0]");
                                     
                                     let row = document.createElement("div");
                                     row.classList.add("row");
                                     table.appendChild(row, document.querySelector("#courseDescription"));
                                     //Starts at the beginning of the UFScores row, because now it is know that the row contains a required course for the major. The courses in this row are then added to the table.
-                                    for(let l = 0; l < UFScores[j].length; l++){
+                                    for(let l = 0; l < eval(collegeSelect + "Scores[j].length"); l++){
                                         let item = document.createElement("div");
                                         item.classList.add("box");
                                         if(l > 0){
@@ -201,9 +346,9 @@ function handleSelect(ev){
                                         }
                                         
                                         //This pocket of if statements ensures that if there is a slash after the first course, or a non slash after a slashed first course, then the appropriate code will execute. 
-                                        if(UFScores[j][l].includes("/")){
+                                        if(eval(collegeSelect + "Scores[j][l]").includes("/")){
                                             for(let m = 0; m < newArray.length; m++){
-                                                newArray = UFScores[j][l].split("/");
+                                                newArray = eval(collegeSelect + "Scores[j][l]").split("/");
                                                 if(arrayOfScores.includes(newArray[m])){
                                                     let highlightScore = document.createElement("span");
                                                     highlightScore.style.color = "blue";                                                    
@@ -223,11 +368,11 @@ function handleSelect(ev){
                                                 }
                                                     
                                             }
-                                        }else if(arrayOfScores[i] == UFScores[j][l]){
+                                        }else if(arrayOfScores[i] == eval(collegeSelect + "Scores[j][l]")){
                                             item.style.color = "blue";
-                                            item.innerHTML += UFScores[j][l];
+                                            item.innerHTML += eval(collegeSelect + "Scores[j][l]");
                                         }else{
-                                            item.innerHTML += UFScores[j][l];
+                                            item.innerHTML += eval(collegeSelect + "Scores[j][l]");
                                         }
 
                                         row.appendChild(item);
@@ -236,16 +381,16 @@ function handleSelect(ev){
                                 }
                             }
                             //Executes if first item in UFScores does not have a slash
-                            else if(arrayOfScores[i] == UFScores[j][k]){
-                                if(alreadyDone.includes(UFScores[j][0])){
+                            else if(arrayOfScores[i] == eval(collegeSelect + "Scores[j][k]")){
+                                if(alreadyDone.includes(eval(collegeSelect + "Scores[j][0]"))){
                                     console.log("already includes this");
                                     break;
                                 }
-                                alreadyDone += UFScores[j][0];
+                                alreadyDone += eval(collegeSelect + "Scores[j][0]");
                                 let row = document.createElement("div");
                                 row.classList.add("row");
                                 table.appendChild(row, document.querySelector("#courseDescription"));
-                                for(let l = 0; l < UFScores[j].length; l++){
+                                for(let l = 0; l < eval(collegeSelect + "Scores[j].length"); l++){
                                     
                                     let item = document.createElement("div");
                                     item.classList.add("box");
@@ -253,21 +398,33 @@ function handleSelect(ev){
                                         item.classList.add("pointer");
                                         item.classList.add("boxCourses");
                                     }
-                                    if(UFScores[j][l].includes("/")){
+                                    if(eval(collegeSelect + "Scores[j][l]").includes("/")){
                                         for(let m = 0; m < newArray.length; m++){
-                                                newArray = UFScores[j][l].split("/");
-                                                item.style.color = "blue";
+                                            newArray = eval(collegeSelect + "Scores[j][l]").split("/");
+                                            if(arrayOfScores.includes(newArray[m])){
+                                                let highlightScore = document.createElement("span");
+                                                highlightScore.style.color = "blue";                                                    
+                                                if(m == newArray.length -1){
+                                                    highlightScore.innerHTML = newArray[m]
+                                                    item.appendChild(highlightScore);
+                                                }else{
+                                                    highlightScore.innerHTML = newArray[m] + "/";
+                                                    item.appendChild(highlightScore);
+                                                }
+                                            }else{
                                                 if(m == newArray.length -1){
                                                     item.innerHTML += newArray[m];
                                                 }else{
                                                     item.innerHTML += newArray[m] + "/";
                                                 }
+                                            }
+                                                
                                         }
-                                    }else if(arrayOfScores[i] == UFScores[j][l]){
+                                    }else if(arrayOfScores[i] == eval(collegeSelect + "Scores[j][l]")){
                                         item.style.color = "blue";
-                                        item.innerHTML += UFScores[j][l];
+                                        item.innerHTML += eval(collegeSelect + "Scores[j][l]");
                                     }else{
-                                        item.innerHTML += UFScores[j][l];
+                                        item.innerHTML += eval(collegeSelect + "Scores[j][l]");
                                     }
                                     row.appendChild(item);
                                 }
@@ -276,7 +433,7 @@ function handleSelect(ev){
                         }
                     }
             }
-        }
+        
     }
             /*
             let alreadyDone = [];
@@ -354,32 +511,45 @@ function handleSelect(ev){
 */
 
     if(collegeSelect == "N/A"){
+        deleteCourseDescription();
         content.style.backgroundColor = "white";
         body.style.backgroundImage = "url('https://i.redd.it/92p34mtzd3y41.png')";
     }else if(collegeSelect == "UF"){
+        deleteCourseDescription();
         content.style.backgroundColor = "orange";
         body.style.backgroundImage = "url('https://i.ytimg.com/vi/Sr4zllx6ue0/maxresdefault.jpg')";   
     }else if(collegeSelect == "UCF"){
+        deleteCourseDescription();
         content.style.backgroundColor = "#ffcf06";
         body.style.backgroundImage = "url('https://pbs.twimg.com/profile_images/462235833274073088/2Mo_aqES.png')";
     }else if(collegeSelect == "Rollins"){
+        deleteCourseDescription();
         content.style.backgroundColor = "#fdb813";
         body.style.backgroundImage = "url('https://i.pinimg.com/originals/6b/a1/ec/6ba1ecc71545be6909405c356f2ef61d.jpg')";
     }else if(collegeSelect == "FSU"){
+        deleteCourseDescription();
         content.style.backgroundColor = "#d6cd96";
         body.style.backgroundImage = "url('https://epicsports.cachefly.net/images/40089/600/fan-mats-florida-state-fsu-logo-all-star-mat.jpg')";
     }else if(collegeSelect == "USF"){
+        deleteCourseDescription();
         content.style.backgroundColor = "#d9f01b";
         body.style.backgroundImage = "url('https://media.wtsp.com/assets/WTSP/images/591532575/591532575_1140x641.jpg')";
     }else if(collegeSelect == "UM"){
+        deleteCourseDescription();
         content.style.backgroundColor = "#FFFFFF";
         body.style.backgroundImage = "url('https://1000logos.net/wp-content/uploads/2018/12/Miami-Hurricanes-basketball-logo.jpg')";
     }else if(collegeSelect == "UA"){
+        deleteCourseDescription();
         content.style.backgroundColor = "#a3a8ae";
         body.style.backgroundImage = "url('https://cdn.wallpapersafari.com/86/18/2zWB4y.jpg')";
     }else if(collegeSelect == "Valencia"){
+        deleteCourseDescription();
         content.style.backgroundColor = "#fcb816";
         body.style.backgroundImage = "url('https://newschoolarch.edu/wp-content/uploads/2020/01/Valencia-College-Logo_Resized.jpg')";
+    }else if(collegeSelect == "UNC"){
+        deleteCourseDescription();
+        content.style.backgroundColor = "#ffffff";
+        body.style.backgroundImage = "url('data:image/png;base64,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')";
     }
 
    
@@ -449,6 +619,12 @@ document.addEventListener("keyup", (e) => {
 
 function clearCourseDescription(){
     courseDescription.innerHTML = "Course Descriptions: <br>";
+}
+
+function deleteCourseDescription(){
+    if(document.querySelector("body").lastElementChild.id == "courseDescription"){
+        document.querySelector("body").removeChild(courseDescription);
+    }
 }
 
 function createCourseDescription(){
