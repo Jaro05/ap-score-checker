@@ -212,7 +212,7 @@ header{
     
     .box{
         font-size: 12px;
-        overflow-wrap: anywhere;
+        word-break: break-word;
     }
 
     #selection{

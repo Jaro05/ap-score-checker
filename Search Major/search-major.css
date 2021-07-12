@@ -1,6 +1,4 @@
-#construction{
-    color: purple;
-}
+
 
 /*
 @font-face{
@@ -52,6 +50,7 @@ h1, h2{
     font-size: 25px;
     text-align: center;
     margin: 10px;
+    color: purple;
 }
 
 #content{
@@ -221,6 +220,7 @@ header{
     
     .box{
         font-size: 12px;
+        word-break: break-word;
     }
 
     #selection{
