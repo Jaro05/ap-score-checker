@@ -41,6 +41,17 @@ nav{
     font-size: 20px;
 }
 
+#navList.li{
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    overflow-wrap: normal;
+}
+
+
+
 h1, h2{
     font-family: "Gothic A1";
 }
@@ -79,9 +90,8 @@ header{
     margin: 20px;
 }
 
-li{
-    overflow-wrap: anywhere;
-}
+
+
 @keyframes fadeInHome{
     from{
         opacity: 0;
@@ -105,11 +115,10 @@ li{
         font-size: 35px;
     }
     
-    li{
-        margin-left: 5px;
-        margin-right: 5px;
+    .sources{
+        overflow-wrap: anywhere;
     }
-    
+
     .box{
         font-size: 12px;
     }
