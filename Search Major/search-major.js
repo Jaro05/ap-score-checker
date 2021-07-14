@@ -286,7 +286,7 @@ let UCFMajors =
 [
     ["Accounting","CGS 2100C,ECO 2013,ECO 2023,ACG 2021,CGS 2100C,MAC 2233,STA 2023,MAC 2311,MAC 2312,ACG 3131,"],
     ["Computer Engineering","ENC 1101,ENC 1102,STA 3032,PHY 2048C,MAC 2311,MAC 2312,MAC 2313,PHY 2049C,CHS 1440,CHM 2045C,STA 3032,COP 3502C,COP 3503C"],
-    ["Aerospace Engineering","ENC 1101,ENC 1102,MAC 2311,STA 3032,MAC 2312,MAC 2313,PHY 2048C,PHY 2049C,CHS 1440,CHM 2045C,STA 3032,COP 3223C,"]
+    ["Aerospace Engineering","ENC 1101,ENC 1102,MAC 2311,STA 3032,MAC 2312,MAC 2313,PHY 2048C,PHY 2049C,CHS 1440,CHM 2045C,STA 3032,COP 3223C,"],
 ]
 
 
@@ -304,11 +304,29 @@ document.addEventListener("DOMContentLoaded", () => {
 function handleSelect(ev){
     let collegeSelect = (document.getElementById("collegeSearchbar")[document.getElementById("collegeSearchbar").selectedIndex].value);
     let majorSelect = (document.getElementById("majorSearchbar")[document.getElementById("majorSearchbar").selectedIndex].value);
-    //As long as a college option is selected, the webpage is updated to show the AP courses for the college.
     clear();
+
+    //clears the options of majorSearchbar
+    let majorSearchbar = document.querySelector("#majorSearchbar");
+    while(majorSearchbar.firstChild){
+        majorSearchbar.removeChild(majorSearchbar.firstChild);
+    }
+    let empty = document.createElement("option");
+    empty.innerHTML = "";
+    empty.value = "N/A";
+    majorSearchbar.appendChild(empty);
+
     let arrayOfScores = [""];
     if(collegeSelect != "N/A"){
         
+            //adds the correct options to the majorSearchbar, depending on the college. 
+            for(let r = 0; r < eval(collegeSelect + "Majors.length"); r++){
+                let option = document.createElement("option");
+                option.value = eval(collegeSelect + "Majors[r][0]");
+                option.innerHTML = eval(collegeSelect + "Majors[r][0]");
+                majorSearchbar.appendChild(option);
+            }
+
             for(let r = 0; r < eval(collegeSelect + "Majors.length"); r++){
                     if(eval(collegeSelect + "Majors[r][0]") == majorSelect){
                         arrayOfScores = eval(collegeSelect + "Majors[r][1]").split(",");
@@ -316,7 +334,8 @@ function handleSelect(ev){
             }
 
             let alreadyDone = [];
-            
+
+            //for creating table of scores.
             //loops through arrayOfScores and compares it to the Score data for the specific college to find a match. 
             for(let i = 0; i < arrayOfScores.length; i++){
                     for(let j = 0; j < eval(collegeSelect + "Scores.length"); j++){
@@ -575,29 +594,31 @@ exitBox.setAttribute("id","exitBox");
 //creates the courseDescription box
 document.addEventListener("click", (e) => {
     let collegeSelect = (document.getElementById("collegeSearchbar")[document.getElementById("collegeSearchbar").selectedIndex].value);
-    for(let r = 0; r < eval(collegeSelect +"Scores.length"); r++){
-        for(let c = 1; c < eval(collegeSelect + "Scores[0].length"); c++){
-            if(e.target.textContent == eval(collegeSelect + "Scores[r][c]") || (e.target.parentElement.textContent == eval(collegeSelect + "Scores[r][c]"))){
-                if(eval(collegeSelect + 'Scores[r][c].includes("/")')){
-                    let coursesArray = eval(collegeSelect + 'Courses[r][c].split("|")');
-                    let descriptionsArray = eval(collegeSelect + 'Descriptions[r][c].split("|")');
-                    createCourseDescription();
-                        for(let i = 0; i < coursesArray.length; i++){
-                            if(i == coursesArray.length - 1){
-                                courseDescription.innerHTML += "<b>" + coursesArray[i] + "</b>" + "<br>"+ descriptionsArray[i]; 
-                            }else{
-                                courseDescription.innerHTML += "<b>" + coursesArray[i] + "</b>" + "<br>"+ descriptionsArray[i] + "<br>" + "<br>"; 
-                            }
-                        }
-                        return("");
-                    }else{
+    if(collegeSelect != "N/A"){
+        for(let r = 0; r < eval(collegeSelect +"Scores.length"); r++){
+            for(let c = 1; c < eval(collegeSelect + "Scores[0].length"); c++){
+                if(e.target.textContent == eval(collegeSelect + "Scores[r][c]") || (e.target.parentElement.textContent == eval(collegeSelect + "Scores[r][c]"))){
+                    if(eval(collegeSelect + 'Scores[r][c].includes("/")')){
+                        let coursesArray = eval(collegeSelect + 'Courses[r][c].split("|")');
+                        let descriptionsArray = eval(collegeSelect + 'Descriptions[r][c].split("|")');
                         createCourseDescription();
-                        courseDescription.innerHTML += "<b>" + eval(collegeSelect + "Courses[r][c]") + "</b>" + "<br>"+ eval(collegeSelect + "Descriptions[r][c]") + "<br>";
-                        return("");
-                    }
+                            for(let i = 0; i < coursesArray.length; i++){
+                                if(i == coursesArray.length - 1){
+                                    courseDescription.innerHTML += "<b>" + coursesArray[i] + "</b>" + "<br>"+ descriptionsArray[i]; 
+                                }else{
+                                    courseDescription.innerHTML += "<b>" + coursesArray[i] + "</b>" + "<br>"+ descriptionsArray[i] + "<br>" + "<br>"; 
+                                }
+                            }
+                            return("");
+                        }else{
+                            createCourseDescription();
+                            courseDescription.innerHTML += "<b>" + eval(collegeSelect + "Courses[r][c]") + "</b>" + "<br>"+ eval(collegeSelect + "Descriptions[r][c]") + "<br>";
+                            return("");
+                        }
+                }
             }
-        }
-    }   
+        }   
+    }
 })
 
 //clears the courseDescription when the red X is clicked
