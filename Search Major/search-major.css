@@ -167,6 +167,11 @@ header{
     color: black;
 }
 
+#clickOnCourse{
+    font-size: 20px;
+    text-align: center;
+}
+
 .pointer{
     cursor: pointer;
 }
@@ -241,6 +246,7 @@ header{
 
     #clickOnCourse{
         text-align: center;
+        font-size: 15px;
     }
     
     #main{

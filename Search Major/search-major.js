@@ -1,7 +1,7 @@
 let UFScores = 
 [
     ["AP Art History","ARH 2000","ARH 2000/ARH 2050","ARH 2000/ARH 2050"],
-    ["AP Biology","BSC 2005/BSC 2005L","BSC 2010/BSC 2010L","BSC 2010/BSC 2010L and BSC 2011/BSC 2011L"],
+    ["AP Biology","BSC 2005/BSC 2005L","BSC 2010/BSC 2010L","BSC 2010/BSC 2010L/BSC 2011/BSC 2011L"],
     ["AP Calculus AB","MAC 2311","MAC 2311","MAC 2311"],
     ["AP Calculus BC","MAC 2311","MAC 2311/MAC 2312","MAC 2311/MAC 2312"],
     ["AP Capstone Research","IDS L000","IDS L000","IDS L000"],
@@ -275,19 +275,206 @@ let UCFDescriptions =
     ["AP World History","Rise of modern civilization from 1500 to the present, with an emphasis on the confrontation between the Western and non-Western spheres of civilization.","Rise of modern civilization from 1500 to the present, with an emphasis on the confrontation between the Western and non-Western spheres of civilization.","Rise of modern civilization from 1500 to the present, with an emphasis on the confrontation between the Western and non-Western spheres of civilization."]
 ]
 
+
+/*Majors template.
+[
+    ["Accounting",",,,,"],
+    ["Advertising",",,,,"],
+    ["Aerospace Engineering",",,,,"],
+    ["Agricultural Operations Management",",,,,"],
+    ["Animal Sciences",",,,,"],
+    ["Anthropology",",,,,"],
+    ["Architecture",",,,,"],
+    ["Art History",",,,,"],
+    ["Art",",,,,"],
+    ["Astronomy and Astrophysics",",,,,"],
+    ["Biological Engineering",",,,,"],
+    ["Biology",",,,,"],
+    ["Biomedical Engineering",",,,,"],
+    ["Business Administration",",,,,"],
+    ["Chemical Engineering",",,,,"],
+    ["Chemistry",",,,,"],
+    ["Chinese",",,,,"],
+    ["Civil Engineering",",,,,"],
+    ["Computer Engineering",",,,,"],
+    ["Computer Science",""],
+    ["Criminology",",,,,"],
+    ["Dance",",,,,"],
+    ["Data Science",",,,,"],
+    ["Economics",",,,,"],
+    ["Education Sciences",",,,,"],
+    ["Electrical Engineering",",,,,"],
+    ["Engineering",",,,,"],
+    ["English",",,,,"],
+    ["Environmental Science",",,,,"],
+    ["Finance",",,,,"],
+    ["Geography",",,,,"],
+    ["German",",,,,"],
+    ["Graphic Design",",,,,"],
+    ["Health Science",",,,,"],
+    ["History",",,,,"],
+    ["Industrial and Systems Engineering",",,,,"],
+    ["Interior Design",",,,,"],
+    ["Italian",",,,,"],
+    ["Japanese",",,,,"],
+    ["Journalism",",,,,"],
+    ["Management",",,,,"],
+    ["Marketing",",,,,"],
+    ["Materials Science and Engineering",",,,,"],
+    ["Mathematics",",,,,"],
+    ["Mechanical Engineering",",,,,"],
+    ["Music Education",",,,,"],
+    ["Nuclear Engineering",",,,,"],
+    ["Nursing",",,,,"],
+    ["Philosophy",",,,,"],
+    ["Physics",",,,,"],
+    ["Political Science",",,,,"],
+    ["Psychology",",,,,"],
+    ["Russian",",,,,"],
+    ["Sociology",",,,,"],
+    ["Spanish",",,,,"],
+    ["Sport Management",",,,,"],
+    ["Statistics",",,,,"],
+    ["Theatre",",,,,"],
+    ["Hospitality",",,,,"],
+]
+*/
+
 let UFMajors = 
 [
+    //note to self, double check footnotes on UF website.
     ["Accounting","ECO 2023,MAC 2233,ECO 2013,MAC 2234,ACG 2021,CGS 2531,ISM 3013,GEB 3218,ACG 2071,STA 2023,ACG 3101,FIN 3403,MAN 3025,QMB 3250,ACG 3401,ACG 4111,MAR 3023,QMB 3302,ACG 4341,BUL 4310,GEB 3373,ACG 4632,MAN 4504,TAX 4001,TAX 5025"],
-    ["Computer Engineering","COP 3502C,EGN 2020C,MAC 2311,COP 3503C,COT 3100,MAC 2312,PHY 2048,PHY 2048L,CDA 3101,COP 3530,MAC 2313,PHY 2049,CHM 2045,CHM 2095,CHM 2045L,EEL 3701C,ENC 3246,MAP 2302,EEL 3111C,EEL 4744C,STA 3032,CEN 3031,EEL 4712C,MAS 3114,CEN 3907C,EGN 4951,COP 4600,CEN 3908C,EGN 4952,EEL 3135,EGS 4034"],
-    ["Aerospace Engineering","CHM 2045,CHM 2095,CHM 2045L,EML 2920,ENC 1101,ENC 1102,MAC 2311,EML 2023,MAC 2312,PHY 2048,2048L,COP 2271,MAC 2313,PHY 2049,2049L,EML 3100,MAP 2302,EEL 3003,EML 4312,,,,,,,"]
+    ["Advertising: Advertising Agency","AMH 2020,ENC 1101,ENC 1102,POS 2041,PSY 2012,STA 2023,THE 2000,ARH 2000,ECO 2013,MUL 2010,CPO 2001"],
+    ["Advertising: Persuasive Messaging","AMH 2020,ENC 1101,ENC 1102,POS 2041,PSY 2012,STA 2023,ARH 2000,ECO 2013,MUL 2010,CPO 2001,POS 2112,ENC 3252"],
+    ["Aerospace Engineering","CHM 2045,CHM 2095,CHM 2045L,ENC 1101,ENC 1102,MAC 2311,MAC 2312,PHY 2048,PHY 2048L,COP 2271,EGM 2511,MAC 2313,PHY 2049,PHY 2049L"],
+    ["Agricultural Operations Management","BSC 2010,BSC 2010L,BOT 2010C,MAC 1147,MAC 2233,CHM 2045,CHM 2045L,STA 2023,ECO 2013,PHY 2004,PHY 2004L,PHY 2020,PSY 2012,AOM 4642,AOM 4643,AOM 4933,AOM 4455,AOM 4461"],
+    ["Anthropology: BA","STA 2023,ANT 3620,ENC 3254"],
+    ["Anthropology: BS","CHM 2045,CHM 2045L,CHM 2046,CHM 2046L,STA 2023,MAC 2311,STA 3024,BSC 2010,BSC 2010L,BSC 2011,BSC 2011L"],
+    ["Architecture","ARC 1701,MAC 1147,PHY 2053"],
+    ["Art History","ARH 2000,ARH 2050,ARH 2500,ARH 2051,ARH 2500,ARH 4931"],
+    ["Art","ARH 2000,ARH 2050,ARH 2051,ARH 2500,ARH 4931"],
+    ["Astronomy: BA","MAC 2311,MAC 2312,PHY 2048,PHY 2048L,AST 3018,PHY 2049,PHY 2049L"],
+    ["Astrophysics: BS","MAC 2311,MAC 2312,PHY 2048,PHY 2048L,MAC 2313,PHY 2049,PHY 2049L,PHY 3101,PHY 4523"],
+    ["Biological Engineering","BSC 2010,BSC 2010L,CHM 2045,CHM 2095,CHM 2045L,MAC 2311,CHM 2046,CHM 2046L,ENC 1101,MAC 2312,PHY 2048,PHY 2048L,COP 2271,PHY 2049,PHY 2049L,BME 3060,EGM 2511,STA 3032,,,,,,,,,"],
+    ["Biology: CALS Applied Biology","CHM 2045,CHM 2045L,ECO 2013,ECO 2023,CHM 2046,CHM 2046L,MAC 2311,BSC 2010,BSC 2010L,STA 2023,MAC 2312,BSC 2011,BSC 2011L,PHY 2053,PHY 2053L,PHY 2048,PHY 2048L,PHY 2054,PHY 2054L,PHY 2049,PHY 2049L"],
+    ["Biology: CALS Biotechnology","CHM 2045,CHM 2045L,ECO 2013,ECO 2023,CHM 2046,CHM 2046L,MAC 2311,BSC 2010,BSC 2010L,STA 2023,MAC 2312,BSC 2011,BSC 2011L,PHY 2053,PHY 2053L,PHY 2048,PHY 2048L,PHY 2054,PHY 2054L,PHY 2049,PHY 2049L"],
+    ["Biology: CALS Natural Science","CHM 2045,CHM 2045L,ECO 2013,ECO 2023,CHM 2046,CHM 2046L,MAC 2311,BSC 2010,BSC 2010L,STA 2023,MAC 2312,BSC 2011,BSC 2011L,PHY 2053,PHY 2053L,PHY 2048,PHY 2048L,PHY 2054,PHY 2054L,PHY 2049,PHY 2049L"],
+    ["Biology: CALS Preprofessional","CHM 2045,CHM 2045L,ECO 2013,ECO 2023,CHM 2046,CHM 2046L,MAC 2311,BSC 2010,BSC 2010L,STA 2023,MAC 2312,BSC 2011,BSC 2011L,PHY 2053,PHY 2053L,PHY 2048,PHY 2048L,PHY 2054,PHY 2054L,PHY 2049,PHY 2049L"],
+    ["Biology: CLAS Integrative Biology","CHM 2045,CHM 2045L,MAC 2311,CHM 2046,CHM 2046L,MAC 2312,STA 2023,BSC 2010,BSC 2010L,BSC 2011,BSC 2011L,PHY 2048,PHY 2053,PHY 2048L,PHY 2053L,PHY 2049,PHY 2054,PHY 2049L,PHY 2054L"],
+    ["Biology: CLAS Preprofesional","CHM 2045,CHM 2045L,MAC 2311,CHM 2046,CHM 2046L,MAC 2312,STA 2023,BSC 2010,BSC 2010L,BSC 2011,BSC 2011L,PHY 2048,PHY 2053,PHY 2048L,PHY 2053L,PHY 2049,PHY 2054,PHY 2049L,PHY 2054L"],
+    ["Biomedical Engineering","BSC 2010,BSC 2010L,CHM 2045,CHM 2045L,MAC 2311,CHM 2046,CHM 2046L,ENC 1101,MAC 2312,PHY 2048,PHY 2048L,COP 2271,PHY 2049,PHY 2049L"],
+    ["Business Administration: Genral Studies BABA","ECO 2023,ECO 2013,MAC 2233,CGS 2531,STA 2023"],
+    ["Chemical Engineering","BSC 2010,CHM 2045,CHM 2045L,CHM 2095,CHM 2095L,MAC 2311,CHM 2046,CHM 2046L,CHM 2096,CHM 2096L,ENC 1101,MAC 2312,PHY 2048,PHY 2048L,PHY 2049,PHY 2049L,STA 2023"],
+    ["Chemistry: Biochemistry","CHM 2045,CHM 2045L,MAC 2311,BSC 2010,BSC 2010L,CHM 2046,CHM 2046L,MAC 2312,BSC 2011,BSC 2011L,PHY 2053,PHY 2053L,PHY 2054,PHY 2054L"],
+    ["Chemistry: General","CHM 2045,CHM 2045L,MAC 2311,CHM 2046,CHM 2046L,MAC 2312,CHM 2212,MAC 2313,PHY 2048,PHY 2053,PHY 2048L,PHY 2053L,PHY 2049,PHY 2054,PHY 2049L,PHY 2054L"],
+    ["Civil Engineering","CHM 2045,CHM 2095,CHM 2045L,ENC 1101,MAC 2311,MAC 2312,PHY 2048,PHY 2048L,COP 2271,PHY 2049,STA 3032"],
+    ["Computer Engineering","COP 3502C,MAC 2311,COP 3503C,MAC 2312,PHY 2048,MAC 2313,PHY 2049,CHM 2045,CHM 2095,CHM 2045L,CEN 3907C,CEN 3908C,EGN 4952"],
+    ["Computer Science CLAS","MAC 2311,COP 3502C,COP 3503C,MAC 2312,PHY 2048,PHY 2048L,PHY 2053,PHY 2053L,PHY 2049,PHY 2049L,PHY 2054,PHY 2054L"],
+    ["Computer Science Herbert Wertheim College of Engineering","COP 3502C,MAC 2311,COP 3503C,MAC 2312,PHY 2048,PHY 2048L,ENC 1101,ENC 1102,PHY 2049,PHY 2049L"],
+    ["Criminology","STA 2023"],
+    ["Data Science","COP 3502C,MAC 2311,STA 2023,COP 3503C,MAC 2312,MAC 2313,MAS 3114"],
+    ["Economics","ECO 2023,ECO 2013,MAC 2233,STA 2023,ECO 3101,ECO 3203,"],
+    ["Education Sciences: Disabilities in Society","STA 2023"],
+    ["Education Sciences: Psychology and Research","STA 2023"],
+    ["Education Sciences: Educational Technology","STA 2023,EDF 3210"],
+    ["Education Sciences: General Studies","STA 2023,EDF 3210,EDF 3423"],
+    ["Education Sciences: Schools, Society and Policy","STA 2023,EDF 3210,EDF 3423"],
+    ["Electrical Engineering","CHM 2045,CHM 2045L,MAC 2311,MAC 2312,PHY 2048,PHY 2049,ENC 3246,"],
+    ["Engineering: Exploring Engineering Studies","ENC 1101,CHM 1025,MAC 1147,CHM 2045,CHM 2045L,MAC 2311,CHM 2046,CHM 2046L,MAC 2312,PHY 2048,PHY 2048L,PHY 2049,PHY 2049L"],
+    ["English","ENC 3250,ENC 3310,ENC 3312,ENC 3414"],
+    ["Environmental Engineering","CHM 2045,CHM 2045L,MAC 2311,CHM 2046,CHM 2046L,ENC 1101,ENC 1102,MAC 2312,PHY 2048,ENC 3246,PHY 2048L,COP 2271,PHY 2049,PHY 2049L,,,,,"],
+    ["Environmental Science: BA","BSC 2005,BSC 2005L,MAC 1147,ECO 2013,ECO 2013,CHM 2045,CHM 2045L,ECO 2023,PHY 2020,PHY 2004,CHM 2046,CHM 2046L,POS 2041,"],
+    ["Environmental Science: BS","CHM 2045,CHM 2045L,MAC 2311,CHM 2046,CHM 2046L,MAC 2312,STA 2023,BSC 2010,BSC 2010L,ECO 2013,BSC 2011,BSC 2011L,ECO 2023,EVS 3000,EVS 3000L,EVS 4021,PHY 2053,PHY 2053L,PHY 2054,PHY 2054L,,,"],
+    ["Finance","ECO 2023,MAC 2233,ECO 2013,MAC 2234,STA 2023"],
+    ["Geography: BA","GEO 2420,STA 2023"],
+    ["Geography: BS","CHM 1025,CHM 1030,GEO 2420,PHY 2004,PHY 2004L,STA 2023,GEO 4930,,,"],
+    ["Graphic Design","ART 1803C,ARH 2050,ART 2353C,ART 2825C,ARH 2051,ART 2013C,ENC 3254,GRA 4186C,GRA 4196C"],
+    ["Health Science: General Health Science","ENC 1101,ENC 1102,PSY 2012,STA 2023,BSC 2005,BSC 2010,,,,,"],
+    ["Health Science: Occupational Therapy Accelerated","BSC 2005,BSC 2005L,ENC 1101,ENC 1102,PSY 2012,STA 2023,,,,,,"],
+    ["Health Science: Pre-Occupational Therapy","ENC 1101,ENC 1102,PSY 2012,STA 2023,BSC 2005,BSC 2005L,BSC 2010,BSC 2010L,,"],
+    ["Health Science: Pre-Physical Therapy","ENC 1101,ENC 1102,PSY 2012,BSC 2010,BSC 2010L,CHM 2045,CHM 2045L,CHM 2046,CHM 2046L,STA 2023,PHY 2053,PHY 2053L,PHY 2054,PHY 2054L,,"],
+    ["Health Science: Pre-Professional","CHM 2045,CHM 2045L,ENC 1101,ENC 1102,MAC 2311,BSC 2010,BSC 2010L,CHM 2046,CHM 2046L,PSY 2012,STA 2023,BSC 2011,BSC 2011L,PHY 2053,PHY 2053L,PHY 2054,PHY 2054L,"],
+    ["History: BA","AMH 4930,AFH 4930,ASH 4930,EUH 4930,HIS 4930,LAH 4930,WOH 4930,AMH 2010,AMH 2020"],
+    ["Industrial and Systems Engineering","CHM 2045,CHM 2045L,ENC 1101,MAC 2311,ECO 2013,PHY 2048,MAC 2312,PHY 2049,ECO 2023"],
+    ["Interior Design","PHY 2053,IND 3468"],
+    ["Italian","ITA 1130,ITA 1131,ITA 2220,ITA 2221,ITA 3420,ITA 3564"],
+    ["Japanese","JPN 1130,JPN 1131,JPN 2230,JPN 2231,JPT 3500,JPN 3410,LIN 3010,JPN 3411"],
+    ["Journalism: BS","AMH 2020,ENC 1101,ARH 2000,ENC 1102,CPO 2001,INR 2001,POS 2112,ECO 2013,POS 2041,STA 2023"],
+    ["Management","ECO 2023,ECO 2013,MAC 2233,STA 2023"],
+    ["Marketing","ECO 2023,ECO 2013,MAC 2233,CGS 2531,STA 2023"],
+    ["Materials Science and Engineering","ENC 1101,CHM 2045,CHM 2045L,CHM 2095,MAC 2311,CHM 2046,CHM 2046L,MAC 2312,PHY 2048,PHY 2048L,PHY 2049,PHY 2049L"],
+    ["Mathematics: BA","MAC 2311,MAC 2312"],
+    ["Mathematics: BS","MAC 2311,MAC 2312"],
+    ["Mechanical Engineering","CHM 2045,CHM 2045L,ENC 1101,ENC 1102,MAC 2311,MAC 2312,PHY 2048,PHY 2048L,PHY 2049,PHY 2049L"],
+    ["Music Education: Choral","MUT 1111,MUT 1241L"],
+    ["Music Education: Instrumental","MUT 1111,MUT 1241L"],
+    ["Nuclear Engineering","CHM 2045,CHM 2045L,MAC 2311,MAC 2312,PHY 2048,PHY 2048L,PHY 2049,PHY 2049L,ARH 2000,BSC 2010,CHM 2046"],
+    ["Nursing","ENC 1101,PSY 2012,STA 2023"],
+    ["Physics: BA","CHM 2045,CHM 2045L,MAC 2311,CHM 2046,MAC 2312,PHY 2048,PHY 2060,PHY 2048L,PHY 2049,PHY 2049L,PHY 4802L"],
+    ["Physics: BS","CHM 2045,CHM 2045L,MAC 2311,CHM 2046,MAC 2312,PHY 2048,PHY 2060,PHY 2048L,PHY 2049,PHY 2049L,PHY 4802L,PHY 4802L"],
+    ["Political Science","CPO 2001,POS 2041,STA 2023,POS 2041"],
+    ["Psychology: General Psychology","PSY 2012,BSC 2005,BSC 2010,STA 2023"],
+    ["Psychology: Behavior Analysis","PSY 2012,BSC 2005,BSC 2010,STA 2023"],
+    ["Psychology: Behavioral and Cognitive Neuroscience","MAC 2311,PSY 2012,BSC 2010,BSC 2011,STA 2023"],
+    ["Russian","RUS 1130,RUS 1131,RUS 2220,RUS 3400,RUS 4000,RUS 4001,"],
+    ["Sociology","STA 2023"],
+    ["Spanish","SPN 1130,SPN 1131,SPN 2200,SPN 2201,,,"],
+    ["Sport Management","PSY 2012,ECO 2013,ECO 2023,STA 2023"],
+    ["Statistics: BA","MAC 2311,MAC 2312,STA 2023"],
+    ["Statistics: BS","MAC 2311,MAC 2312,STA 2023"],
+    ["Tourism,Hospitality and Event Management","STA 2023,ECO 2013,ECO 2023,PSY 2012"],
 ]
+
 
 let UCFMajors = 
 [
-    ["Accounting","CGS 2100C,ECO 2013,ECO 2023,ACG 2021,CGS 2100C,MAC 2233,STA 2023,MAC 2311,MAC 2312,ACG 3131,"],
-    ["Computer Engineering","ENC 1101,ENC 1102,STA 3032,PHY 2048C,MAC 2311,MAC 2312,MAC 2313,PHY 2049C,CHS 1440,CHM 2045C,STA 3032,COP 3502C,COP 3503C"],
-    ["Aerospace Engineering","ENC 1101,ENC 1102,MAC 2311,STA 3032,MAC 2312,MAC 2313,PHY 2048C,PHY 2049C,CHS 1440,CHM 2045C,STA 3032,COP 3223C,"],
+    ["Accounting","CGS 2100C,ECO 2013,ECO 2023,STA 2023,MAC 2311,MAC 2312,"],
+    ["Advertising/Public Relations","ENC 1101,ENC 1102,AMH 2010,STA 2014,ECO 2013,ECO 2023,PSY 2012"],
+    ["Aerospace Engineering","ENC 1101,ENC 1102,MAC 2311,MAC 2312,STA 3032,ECO 2013,ECO 2023,PHY 2048C,PHY 2049C,CHS 1440,CHM 2045C"],
+    ["Art: History","ANT 3160"],
+    ["Art",",,,,"],
+    ["Astronomy and Astrophysics",",,,,"],
+    ["Biological Engineering",",,,,"],
+    ["Biology","BSC 2010C,BSC 2011C,CHM 2045C,CHM 2046,CHM 2046L,PHY 2053C,PHY 2054C,ENC 1101,ENC 1102,MAC 2311,STA 2023,PHY 2048C,PHY 2049C"],
+    ["Biomedical Sciences","ENC 1101,ENC 1102,STA 2023,MAC 2311,BSC 2010C,CHM 2045C,CHM 2046,CHM 2046L,BSC 2011C,PHY 2053C,PHY 2054C,PHY 2048C,PHY 2049C"],
+    ["Business Economics","ECO 2013,ECO 2023,STA 2023,MAC 2311"],
+    ["Chemistry","CHM 2045C,CHM 2046,CHM 2046L,MAC 2311,MAC 2312,PHY 2048C,PHY 2049C,ENC 1101,ENC 1102,STA 2023,BSC 2010C"],
+    ["Civil Engineering","ENC 1101,ENC 1102,MAC 2311,MAC 2312,STA 3032,EVR 1001,GEO 1200,GEO 2370,PHY 2048C,PHY 2049C,CHS 1440,CHM 2045C,CGN 4808C"],
+    ["Computer Engineering: Comprehansive Track","ENC 1101,ENC 1102,MAC 2311,MAC 2312,STA 3032,ECO 2013,ECO 2023,PHY 2048C,PHY 2049C,CHS 1440,CHM 2045C,COP 3502C,COT 3100C"],
+    ["Computer Science","ENC 1101,ENC 1102,MAC 2311,MAC 2312,STA 2023,BSC 2010C,BSC 2011C,PHY 2048C,PHY 2049C,COP 3223C,CHM 2045C,CHM 2046"],
+    ["Data Science","ENC 1101,ENC 1102,MAC 2311,MAC 2312,STA 2023,BSC 2010C,CHM 2045C,PHY 2048C,COP 3502C"],
+    ["Economics","STA 2023,ECO 2013,ECO 2023,MAC 2311,"],
+    ["Electrical Engineering",",,,,"],
+    ["Elementary Education","ENC 1101,ENC 1102,MUL 2010,STA 2014,PSY 2012,POS 2041,BSC 1005,PSC 1121"],
+    ["Emergin Media: Graphic Design Track","ARH 2050,ARH 2051,HUM 2020,AMH 2020,ARH 2050,ARH 2051,ART 2201C,ART 2203C,ART 2300C,ART 2301C,"],
+    ["English: Creative Writing","ENC 1101,ENC 1102,HUM 2020,LIT 2110,LIT 2120,AML 3031"],
+    ["English: Literature","ENC 1101,ENC 1102,HUM 2020,LIT 2110,LIT 2120,AML 3031"],
+    ["English: Technical Communication","ENC 1101,ENC 1102,HUM 2020,LIT 2110,LIT 2120,AML 3031"],
+    ["Environmental Studies","STA 2023,ECO 2023,BSC 2010C,CHM 2045C,BSC 2010C,BSC 2011C,ECO 2023,IDS 4893"],
+    ["Finance","ECO 2013,ECO 2023,STA 2023,MAC 2311,MAC 2312"],
+    ["Health Sciences: Health Promotion Track","ENC 1101,ENC 1102,MUL 2010,STA 2023,POS 2041,PSY 2012,BSC 2010C,BSC 2011C,CHM 2045C,CHM 2046,CHM 2046L,MAC 2311,PHY 2053C,PHY 2054C,PHY 2048C,PHY 2049C,HUN 2201"],
+    ["History","AMH 2010,AMH 2020,EUH 2000,EUH 2001,WOH 2012,WOH 2022"],
+    ["Industrial and Systems Engineering",",,,,"],
+    ["Integrated Buisness","ECO 2013,ECO 2023,CGS 2100C,CGS 2100C,STA 2023,MAC 2311,MAC 2312,ENC 1101,ENC 1102"],
+    ["Journalism","ENC 1101,ENC 1102,AMH 2010,POS 2041,"],
+    ["Marketing","ECO 2013,ECO 2023,MAC 2311,STA 2023,"],
+    ["Materials Science and Engineering","ENC 1101,ENC 1102,MAC 2311,STA 3032,ECO 2013,ECO 2023,CHM 2045C,CHM 2046,CHM 2046L,MAC 2312,PHY 2048C,PHY 2049C"],
+    ["Mathematics","MAC 2311,MAC 2312,COP 3502C,ECO 2023,PHY 2048C,CHM 2045C,CHM 2046,CHM 2046L,BSC 2010C,BSC 2011C,PHY 2048C,PHY 2049C,ECO 2013,STA 2023"],
+    ["Mechanical Engineering","ENC 1101,ENC 1102,ECO 2013,ECO 2023,MAC 2311,MAC 2312,PHY 2048C,PHY 2049C,CHS 1440,CHM 2045C,STA 3032"],
+    ["Music Education","ENC 1101,ENC 1102,MUH 3212,AMH 2010,MUL 2720,AMH 2020,PSY 2012"],
+    ["Nursing","STA 2014,STA 2023,PSY 2012,BSC 2010C"],
+    ["Physics","CHM 2045C,CHM 2046,CHM 2046L,MAC 2311,MAC 2312,PHY 2048C,PHY 2049C,ENC 1101,ENC 1102,ECO 2023,PSY 2012,PHY 3323"],
+    ["Physics: Biophysics","CHM 2045C,CHM 2046,CHM 2046L,MAC 2311,MAC 2312,PHY 2048C,PHY 2049C,ENC 1101,ENC 1102,ECO 2023,PSY 2012,PHY 3323"],
+    ["Political Science: American Politics and Policy","ENC 1101,ENC 1102,AMH 2010,STA 2014,POS 2041,POS 3703"],
+    ["Political Science: International Relations","ENC 1101,ENC 1102,EUH 2001,WOH 2022,STA 2014,POS 2041,POS 3703"],
+    ["Psychology","STA 2023,PSY 2012,BSC 1005,BSC 2010C,BSC 2011C,CHM 2045C,CHM 2046,PHY 2053C"],
+    ["Spanish","SPN 1120C,SPN 1121C,SPN 2200,SPN 2201,SPN 3420,SPW 3100,SPW 3101"],
+    ["Statistics","MAC 2311,MAC 2312,STA 2023,ECO 2013,PSY 2012,BSC 2010C,BSC 2011C,CHM 2045C,CHM 2046,CHM 2046L,PHY 2053C,PHY 2048C,PHY 2049C"],
+    ["Theatre: Acting","AMH 2020"],
+    ["Hospitality Management","CGS 2100C,STA 2023,ECO 2013,ECO 2023,PSY 2012"],
 ]
+
+
 
 
 let table = document.getElementById("table");
@@ -306,19 +493,21 @@ function handleSelect(ev){
     let majorSelect = (document.getElementById("majorSearchbar")[document.getElementById("majorSearchbar").selectedIndex].value);
     clear();
 
-    //clears the options of majorSearchbar
-    let majorSearchbar = document.querySelector("#majorSearchbar");
-    while(majorSearchbar.firstChild){
-        majorSearchbar.removeChild(majorSearchbar.firstChild);
-    }
-    let empty = document.createElement("option");
-    empty.innerHTML = "";
-    empty.value = "N/A";
-    majorSearchbar.appendChild(empty);
+        //clears the options of majorSearchbar
+        let majorSearchbar = document.querySelector("#majorSearchbar");
+        while(majorSearchbar.firstChild){
+            majorSearchbar.removeChild(majorSearchbar.firstChild);
+        }
+        let empty = document.createElement("option");
+        empty.innerHTML = "";
+        empty.value = "N/A";
+        majorSearchbar.appendChild(empty);
+    
 
     let arrayOfScores = [""];
     if(collegeSelect != "N/A"){
         
+            
             //adds the correct options to the majorSearchbar, depending on the college. 
             for(let r = 0; r < eval(collegeSelect + "Majors.length"); r++){
                 let option = document.createElement("option");
@@ -326,6 +515,8 @@ function handleSelect(ev){
                 option.innerHTML = eval(collegeSelect + "Majors[r][0]");
                 majorSearchbar.appendChild(option);
             }
+            majorSearchbar.value = majorSelect;
+            
 
             for(let r = 0; r < eval(collegeSelect + "Majors.length"); r++){
                     if(eval(collegeSelect + "Majors[r][0]") == majorSelect){
