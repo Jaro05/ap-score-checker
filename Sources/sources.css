@@ -73,6 +73,10 @@ header{
     flex-direction: column;
 }
 
+.sources{
+    word-break: break-word;
+}
+
 #headerTitle{
     font-size: 50px;
     margin: 0px;
