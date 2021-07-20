@@ -752,7 +752,7 @@ let UMScores =
     ["AP Capstone Research","N/A","N/A","N/A"],
     ["AP Capstone Seminar","N/A","N/A","N/A"],
     ["AP Chemistry","N/A","N/A","CHM 121/CHM 113"],
-    ["AP Chinese Language and Culture","","CHI 101/CHI 102","CHI 101/CHI 102/CHI 201"],
+    ["AP Chinese Language and Culture","N/A","CHI 101/CHI 102","CHI 101/CHI 102/CHI 201"],
     ["AP Computer Science A","N/A","CSC 120","CSC 120"],
     ["AP Computer Science AB","N/A","N/A","N/A"],
     ["AP Computer Science Principles","N/A","CSC 119","CSC 119"],
