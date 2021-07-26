@@ -31,7 +31,7 @@ let UFScores =
     ["AP Physics 1","PHY 2053/PHY 2053L","PHY 2053/PHY 2053L","PHY 2053/PHY 2053L"],
     ["AP Physics 2","PHY 2054/PHY 2054L","PHY 2054/PHY 2054L","PHY 2054/PHY 2054L"],
     ["AP Physics B","N/A","N/A","N/A"],
-    ["AP Physics C: Electricity and Magnetism","PHY 2054/PHY 2054L","PHY 2054/PHY 2054L","PHY 2054/PHY 2054L"],
+    ["AP Physics C: Electricity and Magnetism","PHY 2054/PHY 2054L","PHY 2049/PHY 2049L","PHY 2049/PHY 2049L"],
     ["Ap Physics C: Mechanics","PHY 2053/PHY 2053L","PHY 2048/PHY 2048L","PHY 2048/PHY 2048L"],
     ["AP Psychcology","PSY 2012","PSY 2012","PSY 2012"],
     ["AP Spanish Language and Culture","SPN 2200","SPN 2200/SPN 2201","SPN 2200/SPN 2201"],
@@ -1281,6 +1281,7 @@ let UNCDescriptions =
     ["Graphic Design",",,,,"],
     ["Health Science",",,,,"],
     ["History",",,,,"],
+    ["Hospitality",",,,,"],
     ["Industrial and Systems Engineering",",,,,"],
     ["Interior Design",",,,,"],
     ["Italian",",,,,"],
@@ -1303,8 +1304,7 @@ let UNCDescriptions =
     ["Spanish",",,,,"],
     ["Sport Management",",,,,"],
     ["Statistics",",,,,"],
-    ["Theatre",",,,,"],
-    ["Hospitality",",,,,"],
+    ["Theatre",",,,,"]
 ]
 */
 
@@ -1390,7 +1390,7 @@ let UFMajors =
     ["Sport Management","PSY 2012,ECO 2013,ECO 2023,STA 2023"],
     ["Statistics: BA","MAC 2311,MAC 2312,STA 2023"],
     ["Statistics: BS","MAC 2311,MAC 2312,STA 2023"],
-    ["Tourism,Hospitality and Event Management","STA 2023,ECO 2013,ECO 2023,PSY 2012"],
+    ["Tourism,Hospitality and Event Management","STA 2023,ECO 2013,ECO 2023,PSY 2012"]
 ]
 
 
@@ -1418,6 +1418,7 @@ let UCFMajors =
     ["Finance","ECO 2013,ECO 2023,STA 2023,MAC 2311,MAC 2312"],
     ["Health Sciences: Health Promotion Track","ENC 1101,ENC 1102,MUL 2010,STA 2023,POS 2041,PSY 2012,BSC 2010C,BSC 2011C,CHM 2045C,CHM 2046,CHM 2046L,MAC 2311,PHY 2053C,PHY 2054C,PHY 2048C,PHY 2049C,HUN 2201"],
     ["History","AMH 2010,AMH 2020,EUH 2000,EUH 2001,WOH 2012,WOH 2022"],
+    ["Hospitality Management","CGS 2100C,STA 2023,ECO 2013,ECO 2023,PSY 2012"],
     ["Integrated Buisness","ECO 2013,ECO 2023,CGS 2100C,CGS 2100C,STA 2023,MAC 2311,MAC 2312,ENC 1101,ENC 1102"],
     ["Journalism","ENC 1101,ENC 1102,AMH 2010,POS 2041,"],
     ["Marketing","ECO 2013,ECO 2023,MAC 2311,STA 2023,"],
@@ -1434,7 +1435,7 @@ let UCFMajors =
     ["Spanish","SPN 1120C,SPN 1121C,SPN 2200,SPN 2201,SPN 3420,SPW 3100,SPW 3101"],
     ["Statistics","MAC 2311,MAC 2312,STA 2023,ECO 2013,PSY 2012,BSC 2010C,BSC 2011C,CHM 2045C,CHM 2046,CHM 2046L,PHY 2053C,PHY 2048C,PHY 2049C"],
     ["Theatre: Acting","AMH 2020"],
-    ["Hospitality Management","CGS 2100C,STA 2023,ECO 2013,ECO 2023,PSY 2012"],
+
 ]
 
 UMMajors = 
@@ -1498,6 +1499,69 @@ UMMajors =
     ["Sociology","ENG 105,ENG 106"],
     ["Spanish","SPA 202,SPA 208,SPA 203,SPA 301,SPA 307,ENG 105,ENG 106"],
     ["Theatre Arts","ENG 105,ENG 106"],
+]
+
+let FSUMajors = 
+[
+    ["Accounting","ENC 1101,CGS 2100,ENC 2135,STA 2023,ECO2013,ECO2023,,"],
+    ["Advertising","ENC 1101,ENC 2135,STA 2023,,"],
+    ["Agricultural Operations Management",",,,,"],
+    ["Anthropology","ENC 1101,,,,"],
+    ["Art History","ENC 1101,ARH 2050,ARH 2051,,"],
+    ["Art: Studio BA","ENC 1101,ART 1300C,ART 1201C,ART 1000,ART 1203,ARH 2000,ARH 2050,ARH 2051"],
+    ["Art: Studio BFA","ENC 1101,ART 1300C,ART 1201C,ART 1000,ART 1203,ARH 2000,ARH 2050,ARH 2051"],
+    ["Biochemistry","ENC 1101,CHM 1045,CHM 1045L,BSC 2010,BSC 2010L,MAC 1105,CHM 1046,CHM 1046L,MAC 2311,MAC 2312,BSC 2011,BSC 2011L,PHY 2048C,PHY 2049C,,,"],
+    ["Biology: FSU Teach","ENC 1101,CHM 1045,CHM 1045L,CHM 1046,CHM 1046L,MAC 2311,BSC 2010,BSC 2010L,BSC 2011,BSC 2011L,PHY 2053C"],
+    ["Business Administration: Panama City Campus Only","ENC 1101,STA 2023,ECO 2013,ECO 2023,"],
+    ["Chemistry","ENC 1101,CHM 1045,CHM 1045L,CHM 1046,CHM 1046L,MAC 2311,MAC 2312,PHY 2048C,PHY 2049C,"],
+    ["Chemical Science","ENC 1101,CHM 1045,CHM 1045L,CHM 1046,CHM 1046L,PHY 2053C,MAC 2311,PHY 2054C,,,,"],
+    ["Child Development: Family and Child Science","ENC 1101,,,,,,"],
+    ["Classical Archeology","ENC 1101,ARH 2090,ARH 3150,ARH 3130,GRE 1120,LAT 1120,GRE 1121,LAT 1121,GRE 2220,LAT 2220,,,"],
+    ["Classical Civilization","ENC 1101,GRE 1120,LAT 1120,GRE 1121,LAT 1121,GRE 2220,LAT 2220,,"],
+    ["Classics and Religion","ENC 1101,GRE 1120,LAT 1120,GRE 1121,LAT 1121,GRE 2220,LAT 2220,,"],
+    ["Computer Science: BA","ENC 1101,COP 3363,MAC 2311,,,"],
+    ["Computer Science: BS","ENC 1101,COP 3363,MAC 2311,MAC 2312,PHY 2048C,PHY 2049C,,,,,"],
+    ["Criminology","ENC 1101,STA 1013,STA 2122,CGS 2060,"],
+    ["Dance","ENC 1101,,,,"],
+    ["Dietetics","ENC 1101,ECO 2000,ECO 2013,ECO 2023,CHM 1045,CHM 1045L,CHM 1046,CHM 1046L,STA 2023,PSY 2012,,"],
+    ["Economics","ENC 1101,STA 2023,ECO 2013,ECO 2023,"],
+    ["Elementary Education","ENC 1101,AMH 2010,AMH 2020,,,"],
+    ["Engineering: Biomedical","ENC 1101,CHM 1045,CHM 1045L,MAC 2311,MAC 2312,CHM 1046,CHM 1046L,BSC 2010,PHY 2048C,PHY 2048,PHY 2048L,PHY 2049C,PHY 2049,PHY 2049L"],
+    ["Engineering: Chemical","ENC 1101,CHM 1045L,MAC 2311,MAC 2312,CHM 1046,CHM 1046L,BSC 2010,PHY 2048C,PHY 2049C,"],
+    ["Engineering: Civil","ENC 1101,CHM 1045,CHM 1045L,MAC 2311,MAC 2312,PHY 2048C,PHY 2049C,CHM 1046,CHM 1046L"],
+    ["Engineering: Computer","ENC 1101,CHM 1045,CHM 1045L,BSC 2010,BSC 2010L,MAC 2311,MAC 2312,PHY 2048C,COP 3014,PHY 2049C,"],
+    ["Engineering: Electrical","ENC 1101,CHM 1045,CHM 1045L,MAC 2311,MAC 2312,PHY 2048C,COP 3014,PHY 2049C,,,"],
+    ["Engineering: Inudstrial","ENC 1101,CHM 1045,CHM 1045L,MAC 2311,MAC 2312,PHY 2048C,PHY 2049C,COP 3014,,,"],
+    ["Engineering: Mechanical","ENC 1101,CHM 1045,CHM 1045L,MAC 2311,MAC 2312,PHY 2048C,PHY 2049C,COP 3014,,,"],
+    ["English: Creative Writing","ENC 1101,LIT 2000,,,"],
+    ["English: Editing, Writing, and Media","ENC 1101,LIT 2000,CGS 2060,,"],
+    ["English: Literature, Media, Culture","ENC 1101,LIT 2000,,,"],
+    ["Environmental Chemistry","ENC 1101,CHM 1045,CHM 1045L,CHM 1046,CHM 1046L,MAC 2311,PHY 2048C,MAC 2312,PHY 2049C,BSC 2010,BSC 2010L,BSC 2011,BSC 2011L"],
+    ["Environmental Science","ENC 1101,AMH 2020,POS 1041,CHM 1045,CHM 1045L,BSC 2010,BSC 2010L,MAC 2311,BSC 2011,BSC 2011L,CHM 1046,CHM 1046L,PHY 2048C,PHY 2053C,GEO 1330,,"],
+    ["Finance","ENC 1101,ECO 2013,ECO 2023,STA 2023,"],
+    ["Geography","ENC 1101,GEO 1400,,,"],
+    ["History","ENC 1101,AMH 2010,AMH 2020,WOH 2023,WOH 2030,CGS 2060,,,"],
+    ["Hospitality and Toursim Management","ENC 1101,ECO 2013,ECO 2023,,"],
+    ["Interior Architecture and Design","ENC 1101,ARH 2051,,"],
+    ["Management: General","ENC 1101,CGS 2100,ECO 2013,ECO 2023,STA 2023,,,,"],
+    ["Marketing","ENC 1101,CGS 2100,STA 2023,ECO 2013,ECO 2023"],
+    ["Mathematics","ENC 1101,MAC 2311,MAC 2312,PHY 2048C,COP 3014,,,,,"],
+    ["Music: General","ENC 1101,MUT 1111,,,"],
+    ["Music Education","ENC 1101,MUT1 111,PSY 2012,,"],
+    ["Neuroscience: Behavioral Neuroscience","ENC 1101,BSC 2010,BSC 2010L,PSY 2012,CHM 1045,CHM 1045L,CHM 1046,CHM 1046L,BSC 2011,BSC 2011L,MAC 2311,PHY 2053C,PSY 3213C,PHY 2054C,,"],
+    ["Neuroscience: Cell and Molecular","ENC 1101,BSC 2010,BSC 2010L,PSY 2012,CHM 1045,CHM 1045L,CHM 1046,CHM 1046L,BSC 2011,BSC 2011L,MAC 2311,PHY 2053C,PSY 3213C,PHY 2054C,,"],
+    ["Nursing","ENC 1101,BSC 2010,PSY 2012,STA 2023,CHM 1045,,,,,,"],
+    ["Philosophy","ENC 1101,CGS 2060,,,"],
+    ["Physics","ENC 1101,MAC 2311,COP 3014,MAC 2312,PHY 2048C,PHY 2049C,,,,"],
+    ["Physics & Astrophysics","ENC 1101,MAC 2311,COP 3014,MAC 2312,PHY 2048C,PHY 2049C,,,,"],
+    ["Physics and Materials","ENC 1101,MAC 2311,CHM 1045,CHM 1045L,MAC 2312,PHY 2048C,PHY 2049C,CHM 1046,CHM 1046L,"],
+    ["Political Science","ENC 1101,CGS 2060,POS 1041,POS 3713,"],
+    ["Psychology","ENC 1101,PSY 2012,,,"],
+    ["Public Health","ENC 1101,STA 2023,"],
+    ["Sociology","ENC 1101,CGS 2060,,,"],
+    ["Spanish","ENC 1101,SPN 1120,SPN 1121,CGS 2060,SPN 2220,SPN 2240,SPW 3030,SPW 3132,"],
+    ["Statistics","ENC 1101,MAC 2311,MAC 2312,STA 3032,"],
+    ["Theatre","ENC 1101,,,,"],
 ]
 
 
