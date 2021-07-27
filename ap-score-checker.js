@@ -83,7 +83,7 @@ let UFScores =
     ["AP Physics 2","PHY 2054/PHY 2054L","PHY 2054/PHY 2054L","PHY 2054/PHY 2054L"],
     ["AP Physics B","N/A","N/A","N/A"],
     ["AP Physics C: Electricity and Magnetism","PHY 2054/PHY 2054L","PHY 2049/PHY 2049L","PHY 2049/PHY 2049L"],
-    ["Ap Physics C: Mechanics","PHY 2053/PHY 2053L","PHY 2048/PHY 2048L","PHY 2048/PHY 2048L"],
+    ["AP Physics C: Mechanics","PHY 2053/PHY 2053L","PHY 2048/PHY 2048L","PHY 2048/PHY 2048L"],
     ["AP Psychcology","PSY 2012","PSY 2012","PSY 2012"],
     ["AP Spanish Language and Culture","SPN 2200","SPN 2200/SPN 2201","SPN 2200/SPN 2201"],
     ["AP Spanish Literature","SPW L000","SPW L000","SPW 3100/SPW L000"],
